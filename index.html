@@ -111,6 +111,14 @@ section { display: grid; gap: 10px; }
 .opt .chev { color: var(--muted); transition: transform .15s; text-align: center; }
 .opt[open] .chev { transform: rotate(90deg); }
 .opt .inner { padding: 0 14px 14px; border-top: 1px dashed var(--line); padding-top: 12px; display: grid; gap: 10px; }
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 0; font-size: .92rem; }
+.facts dt { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); padding-top: 3px; white-space: nowrap; }
+.facts dd { margin: 0; min-width: 0; }
+.facts dd.adv-use { font-weight: 700; color: var(--accent); }
+.facts dd.adv-save { font-weight: 700; color: var(--warn); }
+.lock { font-variant-numeric: tabular-nums; }
+.lock.locked { color: var(--bad); font-weight: 700; }
+.pending-note { font-size: .82rem; color: var(--muted); }
 .tag { font-family: var(--body); font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; padding: 2px 7px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
 .tier { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); margin-top: 8px; }
 @media (prefers-reduced-motion: reduce) { .opt .chev { transition: none; } }
@@ -191,6 +199,7 @@ section { display: grid; gap: 10px; }
             <div class="prob" id="wk-prob"></div>
           </div>
         </div>
+        <div id="wk-facts"></div>
         <ul class="factors" id="wk-factors"></ul>
         <div class="muted" id="wk-backup"></div>
       </div>
@@ -330,6 +339,28 @@ const DATA = {
   }
 };
 
+// Records going into this week (from the pool app)
+const REC = { DAL:"2-2", TB:"0-4", JAX:"3-1", PHI:"2-2", CIN:"2-2", MIA:"0-4", HOU:"0-4", TEN:"0-4", NE:"2-2", LV:"3-1",
+  WAS:"1-3", NYG:"3-1", ATL:"2-2", BAL:"3-1", LA:"2-2", BUF:"3-1", DEN:"2-2", LAC:"0-4", PIT:"2-2", IND:"2-2",
+  NYJ:"1-3", CLE:"3-1", CHI:"3-1", GB:"2-2", NO:"1-3", MIN:"4-0", ARI:"1-3", DET:"2-2", SF:"4-0", SEA:"3-1" };
+const OPP = { DAL:"TB", TB:"DAL", JAX:"PHI", PHI:"JAX", CIN:"MIA", MIA:"CIN", HOU:"TEN", TEN:"HOU", NE:"LV", LV:"NE",
+  WAS:"NYG", NYG:"WAS", ATL:"BAL", BAL:"ATL", LA:"BUF", BUF:"LA", DEN:"LAC", LAC:"DEN", PIT:"IND", IND:"PIT",
+  NYJ:"CLE", CLE:"NYJ", CHI:"GB", GB:"CHI", NO:"MIN", MIN:"NO", ARI:"DET", DET:"ARI", SF:"SEA", SEA:"SF" };
+// Kickoff times (Central)
+const K = { thu: "2026-10-08T19:15:00-05:00", lon: "2026-10-11T08:30:00-05:00", noon: "2026-10-11T12:00:00-05:00",
+  late1: "2026-10-11T15:05:00-05:00", late2: "2026-10-11T15:25:00-05:00", snf: "2026-10-11T19:20:00-05:00", mnf: "2026-10-12T19:15:00-05:00" };
+const KICK = { DAL:K.thu, TB:K.thu, JAX:K.lon, PHI:K.lon, DEN:K.late1, LAC:K.late1, DET:K.late2, ARI:K.late2, SF:K.late2, SEA:K.late2,
+  BAL:K.snf, ATL:K.snf, BUF:K.mnf, LA:K.mnf };
+// Rest and travel notes worth knowing
+const REST = { DAL: "Short week for both teams. Dallas is home after a short trip to Houston.", TB: "Short week, and traveling to Dallas.",
+  JAX: "Both teams fly to London.", PHI: "Both teams fly to London." };
+// Full detail available so far (the daily data job will fill these for every team)
+const DETAIL = {
+  DAL: { qb: "Dak Prescott vs. Jalon Daniels (undrafted rookie, first starts)", line: "DAL –9.5 at open · Total 47.5",
+    move: "Opened –9.5. Early money came in on Dallas, so it may climb.", form: "W at HOU · L vs BAL (in Brazil, final seconds)",
+    future: "Schedule left: Medium. Best future spot: Wk 11 vs TEN (home, Titans 0-4).", advice: ["use", "Use now. No future spot clearly beats 82.8% this week."] }
+};
+
 const NAMES = { ARI:"Cardinals", ATL:"Falcons", BAL:"Ravens", BUF:"Bills", CAR:"Panthers", CHI:"Bears", CIN:"Bengals", CLE:"Browns",
   DAL:"Cowboys", DEN:"Broncos", DET:"Lions", GB:"Packers", HOU:"Texans", IND:"Colts", JAX:"Jaguars", KC:"Chiefs",
   LA:"Rams", LAC:"Chargers", LV:"Raiders", MIA:"Dolphins", MIN:"Vikings", NE:"Patriots", NO:"Saints", NYG:"Giants",
@@ -369,8 +400,35 @@ function toggle(a) {
 function factorList(t) {
   const ul = el("ul", "factors");
   t.f.forEach(([k, txt]) => { const li = el("li"); li.append(el("span", "mark " + k, signs[k]), el("span", null, txt)); ul.append(li); });
-  if (t.v) { const li = el("li"); li.append(el("span", "mark info", "i"), el("span", null, "Venue: " + t.v + (t.v === "Outdoor" ? ". Forecast gets checked closer to kickoff." : ", so weather is not a factor."))); ul.append(li); }
   return ul;
+}
+function kickTime(a) { return new Date(KICK[a] || K.noon); }
+function lockText(a) {
+  const ms = kickTime(a) - Date.now();
+  if (ms <= 0) return ["Locked. Game has started.", true];
+  const m = Math.floor(ms / 60000), d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60), mm = m % 60;
+  return ["Locks in " + (d ? d + "d " : "") + (d || h ? h + "h " : "") + (d ? "" : mm + "m"), false];
+}
+function factsBlock(t) {
+  const dl = el("dl", "facts");
+  const add = (label, text, cls) => { if (!text) return; dl.append(el("dt", null, label)); dl.append(el("dd", cls || null, text)); return dl.lastChild; };
+  const o = OPP[t.a], d = DETAIL[t.a] || {};
+  add("Records", `${t.a} ${REC[t.a] || "?"} · ${o} ${REC[o] || "?"}`);
+  add("QBs", d.qb);
+  add("Line", d.line);
+  add("Movement", d.move);
+  add("Rest", REST[t.a]);
+  add("Form", d.form);
+  add("Future", d.future);
+  if (d.advice) add("Advice", d.advice[1], d.advice[0] === "save" ? "adv-save" : "adv-use");
+  add("Weather", t.v === "Outdoor" ? "Outdoor. Forecast added closer to kickoff." : t.v + ", so weather is not a factor.");
+  const [lt, locked] = lockText(t.a);
+  const dd = add("Lock", lt, "lock" + (locked ? " locked" : ""));
+  dd.dataset.team = t.a;
+  return dl;
+}
+function tickLocks() {
+  document.querySelectorAll("dd.lock").forEach(dd => { const [lt, locked] = lockText(dd.dataset.team); dd.textContent = lt; dd.classList.toggle("locked", locked); });
 }
 
 function render() {
@@ -387,6 +445,7 @@ function render() {
     $("wk-game").textContent = top.g;
     $("wk-pick").textContent = top.n;
     $("wk-prob").textContent = w.probs[top.a] + "%";
+    $("wk-facts").replaceChildren(factsBlock(top));
     $("wk-factors").append(...factorList(top).children);
     $("wk-backup").textContent = second ? `Backup if news breaks: ${second.n} (${w.probs[second.a]}%).` : "";
   } else {
@@ -395,7 +454,7 @@ function render() {
 
   // Every option
   $("opts").replaceChildren();
-  $("opts-note").textContent = `${avail.length} teams you can still pick, best first. Tap one for its report.`;
+  $("opts-note").textContent = `${avail.length} teams you can still pick, best first. Tap one for its report. QBs, betting lines, form and future value fill in for every team once daily updates start; the Cowboys card shows the full version.`;
   const tiers = [[70, "Best bets · 70%+"], [55, "Risky · 55–70%"], [0, "Underdogs · avoid"]];
   let lastTier = null;
   avail.forEach(t => {
@@ -413,7 +472,7 @@ function render() {
     left.append(nm, el("div", "sub", t.g));
     sm.append(left, el("span", "pc", p + "%"), el("span", "chev", "›"));
     const inner = el("div", "inner");
-    inner.append(factorList(t));
+    inner.append(factsBlock(t), factorList(t));
     d.append(sm, inner);
     $("opts").append(d);
   });
@@ -505,6 +564,7 @@ function resetClear() {
 }
 
 render();
+setInterval(tickLocks, 30000);
 
 // Install support: works offline and picks up new versions on the next open
 if ("serviceWorker" in navigator) {
