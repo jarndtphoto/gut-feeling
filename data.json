@@ -1,0 +1,815 @@
+{
+ "v": 1,
+ "season": 2026,
+ "week": 5,
+ "updated": "2026-10-06T22:00:00-05:00",
+ "source": "Hand-entered from Splash",
+ "byes": [
+  "KC",
+  "CAR"
+ ],
+ "teams": {
+  "DAL": {
+   "n": "Cowboys",
+   "opp": "TB",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-09T00:15+00:00",
+   "rec": "2-2",
+   "orec": "0-4",
+   "prob": 82.8,
+   "line": "DAL –9.5 at open · Total 47.5",
+   "qb": "Dak Prescott",
+   "oqb": "Jalon Daniels (undrafted rookie, first starts)",
+   "move": "Opened –9.5. Early money came in on Dallas, so it may climb.",
+   "rest": "Short week for both teams. Dallas is home after a short trip to Houston.",
+   "form": "W at HOU · L vs BAL (in Brazil, final seconds)",
+   "wx": "Dome, so weather is not a factor.",
+   "notes": [
+    [
+     "plus",
+     "Bucs expect to start an undrafted rookie QB. Baker Mayfield dislocated his throwing thumb and was given a 3-week minimum."
+    ],
+    [
+     "plus",
+     "Bucs S Antoine Winfield Jr. is also out with a rib fracture."
+    ],
+    [
+     "minus",
+     "Dallas's defense is thin. CB Cobie Durant is out and LB DeMarvion Overshown is uncertain."
+    ],
+    [
+     "info",
+     "Thursday game, so the pick locks early."
+    ]
+   ]
+  },
+  "JAX": {
+   "n": "Jaguars",
+   "opp": "PHI",
+   "home": false,
+   "neutral": true,
+   "city": "London",
+   "kick": "2026-10-11T13:30+00:00",
+   "rec": "3-1",
+   "orec": "2-2",
+   "prob": 77.3,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": "Both teams fly to London.",
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "plus",
+     "Eagles are banged up: Saquon Barkley is week-to-week, and DeVonta Smith, Dallas Goedert, Hollywood Brown and C Cam Jurgens are all uncertain."
+    ],
+    [
+     "plus",
+     "No major Jaguars injuries reported."
+    ],
+    [
+     "minus",
+     "London game at Tottenham Hotspur Stadium. Jacksonville is the home team on paper, but it's a neutral site, so most of the home edge is gone."
+    ]
+   ]
+  },
+  "CIN": {
+   "n": "Bengals",
+   "opp": "MIA",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "2-2",
+   "orec": "0-4",
+   "prob": 75,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "plus",
+     "Dolphins are winless and CB Reese Taylor is out."
+    ],
+    [
+     "minus",
+     "Ja'Marr Chase is in the concussion protocol and Tee Higgins is day-to-day. Losing both would hurt a lot."
+    ],
+    [
+     "info",
+     "Outdoor in Miami. Check the forecast Saturday."
+    ]
+   ]
+  },
+  "HOU": {
+   "n": "Texans",
+   "opp": "TEN",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "0-4",
+   "orec": "0-4",
+   "prob": 74.7,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "plus",
+     "Titans are winless."
+    ],
+    [
+     "plus",
+     "No major Texans injuries reported."
+    ],
+    [
+     "minus",
+     "Road division game. These produce more upsets than the number suggests."
+    ]
+   ]
+  },
+  "NE": {
+   "n": "Patriots",
+   "opp": "LV",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "2-2",
+   "orec": "3-1",
+   "prob": 67.7,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "minus",
+     "Raiders are 3-1, so this is not a soft opponent."
+    ],
+    [
+     "info",
+     "WR Mack Hollins is uncertain with a calf injury."
+    ],
+    [
+     "info",
+     "Outdoor in Foxborough. Check the forecast Saturday."
+    ]
+   ]
+  },
+  "WAS": {
+   "n": "Commanders",
+   "opp": "NYG",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "1-3",
+   "orec": "3-1",
+   "prob": 66.4,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "minus",
+     "QB is a question mark: Jayden Daniels has a dislocated elbow and backup Marcus Mariota has a knee sprain."
+    ],
+    [
+     "minus",
+     "Division game against a 3-1 Giants team. WR Jaylen Lane is out for the season."
+    ],
+    [
+     "info",
+     "Wait for Washington's QB news before considering them."
+    ]
+   ]
+  },
+  "ATL": {
+   "n": "Falcons",
+   "opp": "BAL",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-12T00:20+00:00",
+   "rec": "2-2",
+   "orec": "3-1",
+   "prob": 63.5,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Dome, so weather is not a factor.",
+   "notes": [
+    [
+     "plus",
+     "Lamar Jackson has an ankle injury and his status is uncertain. If he sits, Tyler Huntley starts and Atlanta's odds go up."
+    ],
+    [
+     "minus",
+     "Pass rusher Za'Darius Smith is in the concussion protocol."
+    ],
+    [
+     "info",
+     "Sunday night game. Lamar's status may not be clear until late in the week."
+    ]
+   ]
+  },
+  "LA": {
+   "n": "Rams",
+   "opp": "BUF",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-13T00:15+00:00",
+   "rec": "2-2",
+   "orec": "3-1",
+   "prob": 61.2,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Covered stadium, so weather is not a factor.",
+   "notes": [
+    [
+     "minus",
+     "Bills are 3-1 and a strong opponent."
+    ],
+    [
+     "plus",
+     "Bills DT Ed Oliver is uncertain with a knee injury."
+    ],
+    [
+     "info",
+     "Monday night, the last game of the week."
+    ]
+   ]
+  },
+  "DEN": {
+   "n": "Broncos",
+   "opp": "LAC",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T20:05+00:00",
+   "rec": "2-2",
+   "orec": "0-4",
+   "prob": 60.6,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Covered stadium, so weather is not a factor.",
+   "notes": [
+    [
+     "plus",
+     "Chargers are winless and missing LT Rashawn Slater (4-6 weeks) and TE Charlie Kolar. WR Ladd McConkey and S Derwin James are week-to-week."
+    ],
+    [
+     "minus",
+     "Broncos lose CB Pat Surtain II (about 2 weeks) and WR Pat Bryant."
+    ],
+    [
+     "minus",
+     "Road division game."
+    ]
+   ]
+  },
+  "PIT": {
+   "n": "Steelers",
+   "opp": "IND",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "2-2",
+   "orec": "2-2",
+   "prob": 58,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "plus",
+     "Colts DE Arden Key is out."
+    ],
+    [
+     "minus",
+     "Close to a coin flip at 58%."
+    ]
+   ]
+  },
+  "NYJ": {
+   "n": "Jets",
+   "opp": "CLE",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "1-3",
+   "orec": "3-1",
+   "prob": 56.5,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "minus",
+     "RB Breece Hall (quad) and CB Jarvis Brownlee Jr. (concussion) are uncertain."
+    ],
+    [
+     "minus",
+     "Browns are 3-1 and the Jets are 1-3."
+    ]
+   ]
+  },
+  "CHI": {
+   "n": "Bears",
+   "opp": "GB",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "3-1",
+   "orec": "2-2",
+   "prob": 55.4,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "minus",
+     "Caleb Williams is out with a hamstring injury. Tyson Bagent starts."
+    ],
+    [
+     "plus",
+     "Packers lost LB Edgerrin Cooper for the season."
+    ],
+    [
+     "minus",
+     "Road division game at Lambeau."
+    ]
+   ]
+  },
+  "NO": {
+   "n": "Saints",
+   "opp": "MIN",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "1-3",
+   "orec": "4-0",
+   "prob": 47.6,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Dome, so weather is not a factor.",
+   "notes": [
+    [
+     "plus",
+     "Justin Jefferson is uncertain with an ankle sprain."
+    ],
+    [
+     "minus",
+     "Underdog against an unbeaten team."
+    ]
+   ]
+  },
+  "GB": {
+   "n": "Packers",
+   "opp": "CHI",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "2-2",
+   "orec": "3-1",
+   "prob": 44.6,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "plus",
+     "Bears are without Caleb Williams."
+    ],
+    [
+     "minus",
+     "Lost LB Edgerrin Cooper for the season. Still an underdog at home."
+    ]
+   ]
+  },
+  "CLE": {
+   "n": "Browns",
+   "opp": "NYJ",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "3-1",
+   "orec": "1-3",
+   "prob": 43.5,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "minus",
+     "Road underdog."
+    ]
+   ]
+  },
+  "IND": {
+   "n": "Colts",
+   "opp": "PIT",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "2-2",
+   "orec": "2-2",
+   "prob": 42,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "minus",
+     "Road underdog and DE Arden Key is out."
+    ]
+   ]
+  },
+  "LAC": {
+   "n": "Chargers",
+   "opp": "DEN",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T20:05+00:00",
+   "rec": "0-4",
+   "orec": "2-2",
+   "prob": 39.4,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Covered stadium, so weather is not a factor.",
+   "notes": [
+    [
+     "minus",
+     "0-4 and missing LT Rashawn Slater, TE Charlie Kolar, and possibly Ladd McConkey and Derwin James."
+    ]
+   ]
+  },
+  "BUF": {
+   "n": "Bills",
+   "opp": "LA",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-13T00:15+00:00",
+   "rec": "3-1",
+   "orec": "2-2",
+   "prob": 38.8,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Covered stadium, so weather is not a factor.",
+   "notes": [
+    [
+     "minus",
+     "Road underdog. DT Ed Oliver is uncertain."
+    ]
+   ]
+  },
+  "BAL": {
+   "n": "Ravens",
+   "opp": "ATL",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-12T00:20+00:00",
+   "rec": "3-1",
+   "orec": "2-2",
+   "prob": 36.5,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Dome, so weather is not a factor.",
+   "notes": [
+    [
+     "minus",
+     "Lamar Jackson's ankle is a real question."
+    ]
+   ]
+  },
+  "NYG": {
+   "n": "Giants",
+   "opp": "WAS",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "3-1",
+   "orec": "1-3",
+   "prob": 33.6,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "info",
+     "Washington's QB trouble could make this closer than 33.6%, but it's still a road underdog."
+    ]
+   ]
+  },
+  "ARI": {
+   "n": "Cardinals",
+   "opp": "DET",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T20:25+00:00",
+   "rec": "1-3",
+   "orec": "2-2",
+   "prob": 33.3,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Retractable roof, so weather is not a factor.",
+   "notes": [
+    [
+     "minus",
+     "LT Paris Johnson Jr. is out for the season."
+    ]
+   ]
+  },
+  "LV": {
+   "n": "Raiders",
+   "opp": "NE",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "3-1",
+   "orec": "2-2",
+   "prob": 32.3,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "minus",
+     "Road underdog despite a 3-1 record."
+    ]
+   ]
+  },
+  "TEN": {
+   "n": "Titans",
+   "opp": "HOU",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "0-4",
+   "orec": "0-4",
+   "prob": 25.3,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "minus",
+     "0-4 and a big underdog."
+    ]
+   ]
+  },
+  "MIA": {
+   "n": "Dolphins",
+   "opp": "CIN",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "0-4",
+   "orec": "2-2",
+   "prob": 25,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "minus",
+     "0-4 and a big underdog."
+    ]
+   ]
+  },
+  "PHI": {
+   "n": "Eagles",
+   "opp": "JAX",
+   "home": false,
+   "neutral": true,
+   "city": "London",
+   "kick": "2026-10-11T13:30+00:00",
+   "rec": "2-2",
+   "orec": "3-1",
+   "prob": 22.7,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": "Both teams fly to London.",
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": [
+    [
+     "minus",
+     "Missing or limited at RB, WR, TE and C."
+    ]
+   ]
+  },
+  "TB": {
+   "n": "Buccaneers",
+   "opp": "DAL",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-09T00:15+00:00",
+   "rec": "0-4",
+   "orec": "2-2",
+   "prob": 17.2,
+   "line": null,
+   "qb": "Jalon Daniels (undrafted rookie, first starts)",
+   "oqb": "Dak Prescott",
+   "move": null,
+   "rest": "Short week, and traveling to Dallas.",
+   "form": null,
+   "wx": "Dome, so weather is not a factor.",
+   "notes": [
+    [
+     "minus",
+     "0-4 and expected to start a rookie QB."
+    ]
+   ]
+  },
+  "MIN": {
+   "n": "Vikings",
+   "opp": "NO",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T17:00+00:00",
+   "rec": "4-0",
+   "orec": "1-3",
+   "prob": 52.4,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Dome, so weather is not a factor.",
+   "notes": []
+  },
+  "DET": {
+   "n": "Lions",
+   "opp": "ARI",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T20:25+00:00",
+   "rec": "2-2",
+   "orec": "1-3",
+   "prob": 66.7,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Retractable roof, so weather is not a factor.",
+   "notes": []
+  },
+  "SF": {
+   "n": "49ers",
+   "opp": "SEA",
+   "home": false,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T20:25+00:00",
+   "rec": "4-0",
+   "orec": "3-1",
+   "prob": 37.3,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": []
+  },
+  "SEA": {
+   "n": "Seahawks",
+   "opp": "SF",
+   "home": true,
+   "neutral": false,
+   "city": "",
+   "kick": "2026-10-11T20:25+00:00",
+   "rec": "3-1",
+   "orec": "4-0",
+   "prob": 62.7,
+   "line": null,
+   "qb": null,
+   "oqb": null,
+   "move": null,
+   "rest": null,
+   "form": null,
+   "wx": "Outdoor. Forecast shows up within a week of kickoff.",
+   "notes": []
+  }
+ },
+ "future": {},
+ "sos": {}
+}

@@ -26,8 +26,6 @@ img { max-width: 100%; }
 html { background: #111613; }
 #splash { position: fixed; inset: 0; z-index: 100; background: #111613 url("splash.jpg?v=1") 40% center / cover no-repeat;
   display: flex; align-items: flex-end; justify-content: center; transition: opacity .45s ease; cursor: pointer; }
-#splash .t { font-family: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif; font-weight: 800; font-size: 3rem; letter-spacing: .02em;
-  color: #fff; text-shadow: 0 2px 14px rgba(0,0,0,.7); margin-bottom: calc(env(safe-area-inset-bottom, 0px) + 56px); }
 #splash.hide { opacity: 0; pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { #splash { transition: none; } }
 /* Layout: one narrow column, a "ticket" for this week's pick, then the 32-team board and a weekly log. */
@@ -118,6 +116,8 @@ section { display: grid; gap: 10px; }
 .facts dd.adv-save { font-weight: 700; color: var(--warn); }
 .lock { font-variant-numeric: tabular-nums; }
 .lock.locked { color: var(--bad); font-weight: 700; }
+.stale { color: var(--bad); font-weight: 600; }
+.locked-tag { background: var(--bad-soft); color: var(--bad); }
 .pending-note { font-size: .82rem; color: var(--muted); }
 .tag { font-family: var(--body); font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; padding: 2px 7px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
 .tier { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); margin-top: 8px; }
@@ -159,7 +159,7 @@ section { display: grid; gap: 10px; }
 </style>
 </head>
 <body>
-<div id="splash" aria-hidden="true"><div class="t">Gut Feeling</div></div>
+<div id="splash" aria-hidden="true"></div>
 <script>
 (function () {
   var sp = document.getElementById("splash"), start = Date.now(), done = false;
@@ -178,6 +178,7 @@ section { display: grid; gap: 10px; }
     <div>
       <div class="label">NFL 2026 · Survivor picks</div>
       <h1>Gut Feeling</h1>
+      <div class="updated" id="fresh"></div>
     </div>
   </header>
 
@@ -245,122 +246,6 @@ section { display: grid; gap: 10px; }
 </div>
 
 <script>
-const DATA = {
-  updated: "Tue, Oct 6, 2026",
-
-  thisWeek: {
-    week: 5,
-    byes: ["KC", "CAR"],
-    // Win probability for every team playing this week (from the pool app)
-    probs: { TB: 17.2, DAL: 82.8, PHI: 22.7, JAX: 77.3, IND: 42, PIT: 58, HOU: 74.7, TEN: 25.3,
-      CIN: 75, MIA: 25, CHI: 55.4, GB: 44.6, NYG: 33.6, WAS: 66.4, CLE: 43.5, NYJ: 56.5,
-      LV: 32.3, NE: 67.7, MIN: 52.4, NO: 47.6, DEN: 60.6, LAC: 39.4, DET: 66.7, ARI: 33.3,
-      SF: 37.3, SEA: 62.7, BAL: 36.5, ATL: 63.5, BUF: 38.8, LA: 61.2 },
-    // One report per team still available this week. f: [kind, text]; kind = plus | minus | info
-    teams: [
-      { a: "DAL", n: "Cowboys", g: "vs. TB (0-4) · Home · Thu 7:15 PM", v: "Dome", f: [
-        ["plus", "Bucs expect to start an undrafted rookie QB. Baker Mayfield dislocated his throwing thumb and was given a 3-week minimum."],
-        ["plus", "Bucs S Antoine Winfield Jr. is also out with a rib fracture."],
-        ["minus", "Dallas's defense is thin. CB Cobie Durant is out and LB DeMarvion Overshown is uncertain."],
-        ["info", "Thursday game, so the pick locks early."] ] },
-      { a: "JAX", n: "Jaguars", g: "vs. PHI (2-2) · London · Sun 8:30 AM", v: "Outdoor", f: [
-        ["plus", "Eagles are banged up: Saquon Barkley is week-to-week, and DeVonta Smith, Dallas Goedert, Hollywood Brown and C Cam Jurgens are all uncertain."],
-        ["plus", "No major Jaguars injuries reported."],
-        ["minus", "London game at Tottenham Hotspur Stadium. Jacksonville is the home team on paper, but it's a neutral site, so most of the home edge is gone."] ] },
-      { a: "CIN", n: "Bengals", g: "@ MIA (0-4) · Road · Sun 12:00 PM", v: "Outdoor", f: [
-        ["plus", "Dolphins are winless and CB Reese Taylor is out."],
-        ["minus", "Ja'Marr Chase is in the concussion protocol and Tee Higgins is day-to-day. Losing both would hurt a lot."],
-        ["info", "Outdoor in Miami. Check the forecast Saturday."] ] },
-      { a: "HOU", n: "Texans", g: "@ TEN (0-4) · Road · Sun 12:00 PM", v: "Outdoor", f: [
-        ["plus", "Titans are winless."],
-        ["plus", "No major Texans injuries reported."],
-        ["minus", "Road division game. These produce more upsets than the number suggests."] ] },
-      { a: "NE", n: "Patriots", g: "vs. LV (3-1) · Home · Sun 12:00 PM", v: "Outdoor", f: [
-        ["minus", "Raiders are 3-1, so this is not a soft opponent."],
-        ["info", "WR Mack Hollins is uncertain with a calf injury."],
-        ["info", "Outdoor in Foxborough. Check the forecast Saturday."] ] },
-      { a: "WAS", n: "Commanders", g: "vs. NYG (3-1) · Home · Sun 12:00 PM", v: "Outdoor", f: [
-        ["minus", "QB is a question mark: Jayden Daniels has a dislocated elbow and backup Marcus Mariota has a knee sprain."],
-        ["minus", "Division game against a 3-1 Giants team. WR Jaylen Lane is out for the season."],
-        ["info", "Wait for Washington's QB news before considering them."] ] },
-      { a: "ATL", n: "Falcons", g: "vs. BAL (3-1) · Home · Sun 7:20 PM", v: "Dome", f: [
-        ["plus", "Lamar Jackson has an ankle injury and his status is uncertain. If he sits, Tyler Huntley starts and Atlanta's odds go up."],
-        ["minus", "Pass rusher Za'Darius Smith is in the concussion protocol."],
-        ["info", "Sunday night game. Lamar's status may not be clear until late in the week."] ] },
-      { a: "LA", n: "Rams", g: "vs. BUF (3-1) · Home · Mon 7:15 PM", v: "Covered stadium", f: [
-        ["minus", "Bills are 3-1 and a strong opponent."],
-        ["plus", "Bills DT Ed Oliver is uncertain with a knee injury."],
-        ["info", "Monday night, the last game of the week."] ] },
-      { a: "DEN", n: "Broncos", g: "@ LAC (0-4) · Road · Sun 3:05 PM", v: "Covered stadium", f: [
-        ["plus", "Chargers are winless and missing LT Rashawn Slater (4-6 weeks) and TE Charlie Kolar. WR Ladd McConkey and S Derwin James are week-to-week."],
-        ["minus", "Broncos lose CB Pat Surtain II (about 2 weeks) and WR Pat Bryant."],
-        ["minus", "Road division game."] ] },
-      { a: "PIT", n: "Steelers", g: "vs. IND (2-2) · Home · Sun 12:00 PM", v: "Outdoor", f: [
-        ["plus", "Colts DE Arden Key is out."],
-        ["minus", "Close to a coin flip at 58%."] ] },
-      { a: "NYJ", n: "Jets", g: "vs. CLE (3-1) · Home · Sun 12:00 PM", v: "Outdoor", f: [
-        ["minus", "RB Breece Hall (quad) and CB Jarvis Brownlee Jr. (concussion) are uncertain."],
-        ["minus", "Browns are 3-1 and the Jets are 1-3."] ] },
-      { a: "CHI", n: "Bears", g: "@ GB (2-2) · Road · Sun 12:00 PM", v: "Outdoor", f: [
-        ["minus", "Caleb Williams is out with a hamstring injury. Tyson Bagent starts."],
-        ["plus", "Packers lost LB Edgerrin Cooper for the season."],
-        ["minus", "Road division game at Lambeau."] ] },
-      { a: "NO", n: "Saints", g: "vs. MIN (4-0) · Home · Sun 12:00 PM", v: "Dome", f: [
-        ["plus", "Justin Jefferson is uncertain with an ankle sprain."],
-        ["minus", "Underdog against an unbeaten team."] ] },
-      { a: "GB", n: "Packers", g: "vs. CHI (3-1) · Home · Sun 12:00 PM", v: "Outdoor", f: [
-        ["plus", "Bears are without Caleb Williams."],
-        ["minus", "Lost LB Edgerrin Cooper for the season. Still an underdog at home."] ] },
-      { a: "CLE", n: "Browns", g: "@ NYJ (1-3) · Road · Sun 12:00 PM", v: "Outdoor", f: [
-        ["minus", "Road underdog."] ] },
-      { a: "IND", n: "Colts", g: "@ PIT (2-2) · Road · Sun 12:00 PM", v: "Outdoor", f: [
-        ["minus", "Road underdog and DE Arden Key is out."] ] },
-      { a: "LAC", n: "Chargers", g: "vs. DEN (2-2) · Home · Sun 3:05 PM", v: "Covered stadium", f: [
-        ["minus", "0-4 and missing LT Rashawn Slater, TE Charlie Kolar, and possibly Ladd McConkey and Derwin James."] ] },
-      { a: "BUF", n: "Bills", g: "@ LA (2-2) · Road · Mon 7:15 PM", v: "Covered stadium", f: [
-        ["minus", "Road underdog. DT Ed Oliver is uncertain."] ] },
-      { a: "BAL", n: "Ravens", g: "@ ATL (2-2) · Road · Sun 7:20 PM", v: "Dome", f: [
-        ["minus", "Lamar Jackson's ankle is a real question."] ] },
-      { a: "NYG", n: "Giants", g: "@ WAS (1-3) · Road · Sun 12:00 PM", v: "Outdoor", f: [
-        ["info", "Washington's QB trouble could make this closer than 33.6%, but it's still a road underdog."] ] },
-      { a: "ARI", n: "Cardinals", g: "vs. DET (2-2) · Home · Sun 3:25 PM", v: "Retractable roof", f: [
-        ["minus", "LT Paris Johnson Jr. is out for the season."] ] },
-      { a: "LV", n: "Raiders", g: "@ NE (2-2) · Road · Sun 12:00 PM", v: "Outdoor", f: [
-        ["minus", "Road underdog despite a 3-1 record."] ] },
-      { a: "TEN", n: "Titans", g: "vs. HOU (0-4) · Home · Sun 12:00 PM", v: "Outdoor", f: [
-        ["minus", "0-4 and a big underdog."] ] },
-      { a: "MIA", n: "Dolphins", g: "vs. CIN (2-2) · Home · Sun 12:00 PM", v: "Outdoor", f: [
-        ["minus", "0-4 and a big underdog."] ] },
-      { a: "PHI", n: "Eagles", g: "vs. JAX (3-1) · London · Sun 8:30 AM", v: "Outdoor", f: [
-        ["minus", "Missing or limited at RB, WR, TE and C."] ] },
-      { a: "TB", n: "Buccaneers", g: "@ DAL (2-2) · Road · Thu 7:15 PM", v: "Dome", f: [
-        ["minus", "0-4 and expected to start a rookie QB."] ] }
-    ]
-  }
-};
-
-// Records going into this week (from the pool app)
-const REC = { DAL:"2-2", TB:"0-4", JAX:"3-1", PHI:"2-2", CIN:"2-2", MIA:"0-4", HOU:"0-4", TEN:"0-4", NE:"2-2", LV:"3-1",
-  WAS:"1-3", NYG:"3-1", ATL:"2-2", BAL:"3-1", LA:"2-2", BUF:"3-1", DEN:"2-2", LAC:"0-4", PIT:"2-2", IND:"2-2",
-  NYJ:"1-3", CLE:"3-1", CHI:"3-1", GB:"2-2", NO:"1-3", MIN:"4-0", ARI:"1-3", DET:"2-2", SF:"4-0", SEA:"3-1" };
-const OPP = { DAL:"TB", TB:"DAL", JAX:"PHI", PHI:"JAX", CIN:"MIA", MIA:"CIN", HOU:"TEN", TEN:"HOU", NE:"LV", LV:"NE",
-  WAS:"NYG", NYG:"WAS", ATL:"BAL", BAL:"ATL", LA:"BUF", BUF:"LA", DEN:"LAC", LAC:"DEN", PIT:"IND", IND:"PIT",
-  NYJ:"CLE", CLE:"NYJ", CHI:"GB", GB:"CHI", NO:"MIN", MIN:"NO", ARI:"DET", DET:"ARI", SF:"SEA", SEA:"SF" };
-// Kickoff times (Central)
-const K = { thu: "2026-10-08T19:15:00-05:00", lon: "2026-10-11T08:30:00-05:00", noon: "2026-10-11T12:00:00-05:00",
-  late1: "2026-10-11T15:05:00-05:00", late2: "2026-10-11T15:25:00-05:00", snf: "2026-10-11T19:20:00-05:00", mnf: "2026-10-12T19:15:00-05:00" };
-const KICK = { DAL:K.thu, TB:K.thu, JAX:K.lon, PHI:K.lon, DEN:K.late1, LAC:K.late1, DET:K.late2, ARI:K.late2, SF:K.late2, SEA:K.late2,
-  BAL:K.snf, ATL:K.snf, BUF:K.mnf, LA:K.mnf };
-// Rest and travel notes worth knowing
-const REST = { DAL: "Short week for both teams. Dallas is home after a short trip to Houston.", TB: "Short week, and traveling to Dallas.",
-  JAX: "Both teams fly to London.", PHI: "Both teams fly to London." };
-// Full detail available so far (the daily data job will fill these for every team)
-const DETAIL = {
-  DAL: { qb: "Dak Prescott vs. Jalon Daniels (undrafted rookie, first starts)", line: "DAL –9.5 at open · Total 47.5",
-    move: "Opened –9.5. Early money came in on Dallas, so it may climb.", form: "W at HOU · L vs BAL (in Brazil, final seconds)",
-    future: "Schedule left: Medium. Best future spot: Wk 11 vs TEN (home, Titans 0-4).", advice: ["use", "Use now. No future spot clearly beats 82.8% this week."] }
-};
-
 const NAMES = { ARI:"Cardinals", ATL:"Falcons", BAL:"Ravens", BUF:"Bills", CAR:"Panthers", CHI:"Bears", CIN:"Bengals", CLE:"Browns",
   DAL:"Cowboys", DEN:"Broncos", DET:"Lions", GB:"Packers", HOU:"Texans", IND:"Colts", JAX:"Jaguars", KC:"Chiefs",
   LA:"Rams", LAC:"Chargers", LV:"Raiders", MIA:"Dolphins", MIN:"Vikings", NE:"Patriots", NO:"Saints", NYG:"Giants",
@@ -380,7 +265,6 @@ function heatHue(p) {
 }
 const $ = id => document.getElementById(id);
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
-const w = DATA.thisWeek;
 const signs = { plus: "+", minus: "–", info: "i" };
 const KEY = "survivor-used-v1";
 
@@ -397,68 +281,134 @@ function toggle(a) {
   save(); render();
 }
 
-function factorList(t) {
-  const ul = el("ul", "factors");
-  t.f.forEach(([k, txt]) => { const li = el("li"); li.append(el("span", "mark " + k, signs[k]), el("span", null, txt)); ul.append(li); });
-  return ul;
+// ---- Data from the daily update (data.json) ----
+let M = null;
+async function loadData() {
+  try {
+    const r = await fetch("data.json", { cache: "no-store" });
+    if (!r.ok) throw new Error(r.status);
+    M = await r.json();
+  } catch (e) {
+    M = null;
+  }
+  render();
 }
-function kickTime(a) { return new Date(KICK[a] || K.noon); }
-function lockText(a) {
-  const ms = kickTime(a) - Date.now();
+
+function fmtKick(iso) {
+  const d = new Date(iso);
+  return d.toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" });
+}
+function gameLabel(t) {
+  const where = t.neutral ? (t.city || "Neutral site") : (t.home ? "Home" : "Road");
+  return `${t.home || t.neutral ? "vs." : "@"} ${t.opp} (${t.orec || "?"}) · ${where} · ${fmtKick(t.kick)}`;
+}
+function lockText(iso) {
+  const ms = new Date(iso) - Date.now();
   if (ms <= 0) return ["Locked. Game has started.", true];
   const m = Math.floor(ms / 60000), d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60), mm = m % 60;
   return ["Locks in " + (d ? d + "d " : "") + (d || h ? h + "h " : "") + (d ? "" : mm + "m"), false];
 }
+
+// Future value depends on which teams this person has left
+function futureInfo(t) {
+  const fut = (M.future && M.future[t.a]) || null;
+  if (!fut) return null;
+  const sos = M.sos && M.sos[t.a];
+  if (!fut.length) return { text: "No games left after this week.", advice: ["use", "Use now. This is its last game."] };
+  const strongIn = wk => Object.keys(M.future).filter(x => x !== t.a && !isUsed(x)
+    && (M.future[x] || []).some(f => f.wk === wk && f.p >= 70)).length;
+  const good = fut.filter(f => f.p >= 70);
+  const best = fut.reduce((b, f) => (!b || f.p > b.p ? f : b), null);
+  const spot = f => `Wk ${f.wk} ${f.home ? "vs" : "@"} ${f.opp} (${f.p}%)`;
+  const text = `Schedule left: ${sos || "?"}. ${good.length} strong spot${good.length === 1 ? "" : "s"} left. Best: ${spot(best)}.`;
+  const cur = t.prob;
+  let advice;
+  if (cur < 55) advice = ["save", "Avoid this week. It's an underdog or close to a coin flip."];
+  else if (best.p >= cur + 6 && best.p >= 70 && strongIn(best.wk) <= 2) {
+    const n = strongIn(best.wk);
+    advice = ["save", `Save for Wk ${best.wk}. Only ${n} other strong option${n === 1 ? "" : "s"} that week.`];
+  } else if (best.p >= cur + 10) advice = ["save", `Consider saving for Wk ${best.wk} (${best.p}%).`];
+  else advice = ["use", good.length ? "Use now. Its later spots don't beat this week." : "Use now. No strong spots left later."];
+  return { text, advice };
+}
+
+function factorList(t) {
+  const ul = el("ul", "factors");
+  (t.notes || []).forEach(([k, txt]) => { const li = el("li"); li.append(el("span", "mark " + k, signs[k] || "i"), el("span", null, txt)); ul.append(li); });
+  return ul;
+}
 function factsBlock(t) {
   const dl = el("dl", "facts");
-  const add = (label, text, cls) => { if (!text) return; dl.append(el("dt", null, label)); dl.append(el("dd", cls || null, text)); return dl.lastChild; };
-  const o = OPP[t.a], d = DETAIL[t.a] || {};
-  add("Records", `${t.a} ${REC[t.a] || "?"} · ${o} ${REC[o] || "?"}`);
-  add("QBs", d.qb);
-  add("Line", d.line);
-  add("Movement", d.move);
-  add("Rest", REST[t.a]);
-  add("Form", d.form);
-  add("Future", d.future);
-  if (d.advice) add("Advice", d.advice[1], d.advice[0] === "save" ? "adv-save" : "adv-use");
-  add("Weather", t.v === "Outdoor" ? "Outdoor. Forecast added closer to kickoff." : t.v + ", so weather is not a factor.");
-  const [lt, locked] = lockText(t.a);
+  const add = (label, text, cls) => { if (!text) return null; dl.append(el("dt", null, label)); dl.append(el("dd", cls || null, text)); return dl.lastChild; };
+  add("Records", `${t.a} ${t.rec || "?"} · ${t.opp} ${t.orec || "?"}`);
+  if (t.qb || t.oqb) add("QBs", `${t.qb || "?"} vs. ${t.oqb || "?"}`);
+  add("Line", t.line);
+  add("Movement", t.move);
+  add("Rest", t.rest);
+  add("Form", t.form);
+  const fi = futureInfo(t);
+  if (fi) {
+    add("Future", fi.text);
+    add("Advice", fi.advice[1], fi.advice[0] === "save" ? "adv-save" : "adv-use");
+  }
+  add("Weather", t.wx);
+  const [lt, locked] = lockText(t.kick);
   const dd = add("Lock", lt, "lock" + (locked ? " locked" : ""));
-  dd.dataset.team = t.a;
+  dd.dataset.kick = t.kick;
   return dl;
 }
 function tickLocks() {
-  document.querySelectorAll("dd.lock").forEach(dd => { const [lt, locked] = lockText(dd.dataset.team); dd.textContent = lt; dd.classList.toggle("locked", locked); });
+  document.querySelectorAll("dd.lock").forEach(dd => { const [lt, locked] = lockText(dd.dataset.kick); dd.textContent = lt; dd.classList.toggle("locked", locked); });
 }
 
 function render() {
   const openIds = new Set([...document.querySelectorAll(".opt[open]")].map(d => d.id));
   const firstRender = !document.querySelector(".opt");
-  const avail = w.teams.filter(t => !isUsed(t.a)).sort((x, y) => w.probs[y.a] - w.probs[x.a]);
-  const top = avail[0], second = avail[1];
 
+  if (!M || !M.teams) {
+    $("wk-title").textContent = "This week's pick";
+    $("wk-pick").textContent = "Couldn't load picks";
+    $("wk-prob").textContent = "";
+    $("wk-game").textContent = "";
+    $("wk-backup").textContent = "Check your connection and reopen the app.";
+    return;
+  }
+
+  const all = Object.entries(M.teams).map(([a, t]) => ({ a, ...t }));
+  const started = t => new Date(t.kick) <= Date.now();
+  const avail = all.filter(t => !isUsed(t.a)).sort((x, y) => y.prob - x.prob);
+  const pickable = avail.filter(t => !started(t));
+  const top = pickable[0], second = pickable[1];
+
+  // Freshness
+  const upd = new Date(M.updated);
+  const ageH = (Date.now() - upd) / 3600000;
+  $("fresh").textContent = `Updated ${upd.toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" })}`;
+  $("fresh").classList.toggle("stale", ageH > 36);
+  if (ageH > 36) $("fresh").textContent += ". Data may be out of date.";
 
   // Suggested pick
-  $("wk-title").textContent = `Week ${w.week} pick`;
+  $("wk-title").textContent = `Week ${M.week} pick`;
   $("wk-factors").replaceChildren();
+  $("wk-facts").replaceChildren();
   if (top) {
-    $("wk-game").textContent = top.g;
+    $("wk-game").textContent = gameLabel(top);
     $("wk-pick").textContent = top.n;
-    $("wk-prob").textContent = w.probs[top.a] + "%";
-    $("wk-facts").replaceChildren(factsBlock(top));
+    $("wk-prob").textContent = top.prob + "%";
+    $("wk-facts").append(factsBlock(top));
     $("wk-factors").append(...factorList(top).children);
-    $("wk-backup").textContent = second ? `Backup if news breaks: ${second.n} (${w.probs[second.a]}%).` : "";
+    $("wk-backup").textContent = second ? `Backup if news breaks: ${second.n} (${second.prob}%).` : "";
   } else {
     $("wk-game").textContent = ""; $("wk-pick").textContent = "No teams left"; $("wk-prob").textContent = ""; $("wk-backup").textContent = "";
   }
 
   // Every option
   $("opts").replaceChildren();
-  $("opts-note").textContent = `${avail.length} teams you can still pick, best first. Tap one for its report. QBs, betting lines, form and future value fill in for every team once daily updates start; the Cowboys card shows the full version.`;
+  $("opts-note").textContent = `${avail.length} teams you can still pick, best first. Tap one for its report.`;
   const tiers = [[70, "Best bets · 70%+"], [55, "Risky · 55–70%"], [0, "Underdogs · avoid"]];
   let lastTier = null;
   avail.forEach(t => {
-    const p = w.probs[t.a];
+    const p = t.prob;
     const tier = tiers.find(([min]) => p >= min);
     if (tier !== lastTier) { $("opts").append(el("div", "tier", tier[1])); lastTier = tier; }
     const d = el("details", "opt");
@@ -469,7 +419,8 @@ function render() {
     const left = el("div");
     const nm = el("div", "nm", t.n);
     if (top && t.a === top.a) nm.append(el("span", "tag", "Suggested"));
-    left.append(nm, el("div", "sub", t.g));
+    if (started(t)) nm.append(el("span", "tag locked-tag", "Locked"));
+    left.append(nm, el("div", "sub", gameLabel(t)));
     sm.append(left, el("span", "pc", p + "%"), el("span", "chev", "›"));
     const inner = el("div", "inner");
     inner.append(factsBlock(t), factorList(t));
@@ -482,26 +433,28 @@ function render() {
   DIVS.forEach(([name, teams]) => {
     const d = el("div", "div"); d.append(el("div", "label", name));
     const g = el("div", "teams");
-    teams.forEach(t => {
+    teams.forEach(a => {
       let c = "tm";
-      const p = w.probs[t];
+      const t = M.teams[a];
+      const p = t ? t.prob : null;
       const tile = el("div");
-      tile.append(document.createTextNode(t));
-      if (isUsed(t)) c += " used";
-      else if (w.byes.includes(t)) { c += " bye"; tile.append(el("small", null, "bye")); }
-      else if (p != null) {
+      tile.append(document.createTextNode(a));
+      if (isUsed(a)) c += " used";
+      else if ((M.byes || []).includes(a) || !t) { c += " bye"; tile.append(el("small", null, "bye")); }
+      else {
         c += " heat";
         tile.style.setProperty("--h", heatHue(p));
         tile.append(el("small", null, (Math.round(p * 10) / 10) + "%"));
       }
-      if (top && t === top.a) c += " lean";
+      if (top && a === top.a) c += " lean";
       tile.className = c;
-      tile.title = p != null ? `${NAMES[t]}: ${p}% win probability` : NAMES[t];
+      tile.title = p != null ? `${NAMES[a]}: ${p}% win probability` : NAMES[a];
       g.append(tile);
     });
     d.append(g); $("board").append(d);
   });
-  $("leftcount").textContent = `${32 - used.length} teams still available · ${w.byes.map(b => NAMES[b]).join(" and ")} on bye in Week ${w.week}`;
+  const byes = (M.byes || []).map(b => NAMES[b] || b);
+  $("leftcount").textContent = `${32 - used.length} teams still available` + (byes.length ? ` · ${byes.join(" and ")} on bye in Week ${M.week}` : "");
 
   // Team tracker
   $("tracker").replaceChildren();
@@ -515,7 +468,7 @@ function render() {
       b.id = "trk-" + t;
       b.setAttribute("aria-pressed", u ? "true" : "false");
       b.setAttribute("aria-label", `${NAMES[t]}${u ? ", used in week " + u.wk : ""}`);
-      b.append(document.createTextNode(t), el("small", null, u ? "Wk " + u.wk : "\u00a0"));
+      b.append(document.createTextNode(t), el("small", null, u ? "Wk " + u.wk : " "));
       b.addEventListener("click", () => toggle(t));
       g.append(b);
     });
@@ -536,11 +489,11 @@ function render() {
   if (top) {
     const li = el("li");
     const mid = el("div"); const nm = el("div", null, top.n + " (suggested)"); nm.style.fontWeight = "700";
-    mid.append(nm, el("div", "muted", top.g));
-    li.append(el("span", "wk", "Wk " + w.week), mid, el("span", "pill pending", "Not picked"));
+    mid.append(nm, el("div", "muted", gameLabel(top)));
+    li.append(el("span", "wk", "Wk " + M.week), mid, el("span", "pill pending", "Not picked"));
     $("log").append(li);
   }
-  $("updated").textContent = "Odds and reports last updated " + DATA.updated;
+  $("updated").textContent = `Sources: ${M.source || "ESPN"}. Future projections are estimates from results so far.`;
 }
 
 // Clear all, with an on-page confirm
@@ -563,8 +516,10 @@ function resetClear() {
   $("clear-msg").textContent = "";
 }
 
-render();
+loadData();
 setInterval(tickLocks, 30000);
+// Pull fresh data when the app comes back to the front
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") loadData(); });
 
 // Install support: works offline and picks up new versions on the next open
 if ("serviceWorker" in navigator) {

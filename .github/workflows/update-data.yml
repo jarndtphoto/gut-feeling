@@ -1,0 +1,47 @@
+name: Update picks data
+
+on:
+  schedule:
+    # Daily full update: 7 AM Central (6 AM after clocks change Nov 1)
+    - cron: "0 12 * * *"
+    # Game-day checks every 30 minutes. The script only updates when a game
+    # kicks off in 35-85 minutes (right after inactives are posted).
+    - cron: "15,45 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch odds, injuries and weather
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          RUN_KIND: ${{ github.event_name == 'workflow_dispatch' && 'manual' || (github.event.schedule == '0 12 * * *' && 'daily' || 'gameday') }}
+        run: python scripts/update.py
+
+      - name: Save new data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json data/state.json
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update picks data"
+            git pull --rebase origin main
+            git push
+          fi
