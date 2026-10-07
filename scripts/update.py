@@ -323,7 +323,9 @@ def league_injuries():
         log(f"  injuries endpoint failed ({e})")
         return res
     for blk in data.get("injuries") or []:
-        t = FULL2AB.get(blk.get("displayName"))
+        t = FULL2AB.get(blk.get("displayName")) or ab((blk.get("team") or {}).get("abbreviation"))
+        if t not in TEAMS:
+            t = None
         if not t:
             continue
         lst = []
@@ -554,10 +556,12 @@ def main():
             continue
         playing.update([h, a])
         bits = summary_bits(g["id"])
-        if not bits["inj"]:
-            if backup_inj is None:
-                backup_inj = league_injuries()
-            bits["inj"] = {t: backup_inj.get(t, []) for t in (h, a)}
+        # Game summaries can miss players, so merge in the league-wide injury list
+        if backup_inj is None:
+            backup_inj = league_injuries()
+        for t in (h, a):
+            have = {x["name"] for x in bits["inj"].get(t, [])}
+            bits["inj"].setdefault(t, []).extend(x for x in backup_inj.get(t, []) if x["name"] not in have)
         for side in ("home", "away"):
             t = g[side]["a"]
             if t not in bits["qb"]:
