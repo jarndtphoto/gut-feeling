@@ -2,7 +2,7 @@
 // Pages and data: try the network first so updates show up right away,
 // fall back to the saved copy when there's no signal.
 // Icons and fonts: use the saved copy, they rarely change.
-const CACHE = "gut-feeling-v1";
+const CACHE = "gut-feeling-v2";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 
 self.addEventListener("install", e => {
