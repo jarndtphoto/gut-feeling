@@ -210,6 +210,7 @@ def parse_event(ev):
     for c in comp.get("competitors") or []:
         side[c.get("homeAway")] = {
             "a": ab((c.get("team") or {}).get("abbreviation")),
+            "tid": (c.get("team") or {}).get("id"),
             "score": num(c.get("score")),
             "leaders": c.get("leaders") or [],
         }
@@ -338,6 +339,72 @@ def league_injuries():
             })
         res[t] = lst
     return res
+
+
+BAD = ("Out", "IR", "Doubtful")
+
+
+def depth_chart_qbs(team_id):
+    """QBs in depth-chart order from ESPN, or [] if unavailable."""
+    if not team_id:
+        return []
+    names = []
+    for url in (f"{ESPN}/teams/{team_id}/depthcharts",
+                f"https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/teams/{team_id}/depthcharts"):
+        try:
+            d = get(url, tries=2)
+        except Exception:  # noqa: BLE001
+            continue
+
+        def walk(o):
+            if isinstance(o, dict):
+                pos = o.get("positions")
+                if isinstance(pos, dict):
+                    q = pos.get("qb") or pos.get("QB")
+                    if isinstance(q, dict):
+                        for a in q.get("athletes") or []:
+                            n = a.get("displayName") or (a.get("athlete") or {}).get("displayName")
+                            if n and n not in names:
+                                names.append(n)
+                        return
+                for v in o.values():
+                    walk(v)
+            elif isinstance(o, list):
+                for v in o:
+                    walk(v)
+        walk(d)
+        if names:
+            break
+    return names
+
+
+def last_game_passer(t, weeks, wk):
+    """Who threw the most for this team in its most recent finished game."""
+    for n in range(wk - 1, 0, -1):
+        for g in weeks.get(n) or []:
+            if not g["done"]:
+                continue
+            for side in ("home", "away"):
+                if g[side]["a"] != t:
+                    continue
+                for cat in g[side]["leaders"]:
+                    if cat.get("name") in ("passingYards", "passingLeader") and cat.get("leaders"):
+                        return (cat["leaders"][0].get("athlete") or {}).get("displayName")
+                return None
+    return None
+
+
+def pick_starter(t, tid, inj, season_leader, weeks, wk):
+    bad = {x["name"] for x in inj if x["status"] in BAD}
+    for n in depth_chart_qbs(tid):
+        if n not in bad:
+            return n, "depth chart"
+    lg = last_game_passer(t, weeks, wk)
+    if lg and lg not in bad:
+        return lg, "last game"
+    if season_leader and season_leader not in bad:
+        return season_leader, "season leader"
+    return None, None
 
 
 # ---------- Odds ----------
@@ -568,6 +635,10 @@ def main():
                 for cat in g[side]["leaders"]:
                     if cat.get("name") in ("passingYards", "passingLeader") and cat.get("leaders"):
                         bits["qb"][t] = (cat["leaders"][0].get("athlete") or {}).get("displayName")
+        bits.setdefault("start", {})
+        for side in ("home", "away"):
+            t = g[side]["a"]
+            bits["start"][t] = pick_starter(t, g[side].get("tid"), bits["inj"].get(t, []), bits["qb"].get(t), weeks, wk)
 
         # Same two teams can meet twice, so match on kickoff time too
         o = next((x for x in odds.get(frozenset((h, a)), [])
@@ -647,15 +718,20 @@ def build_team(t, o, home, g, p, spreads, mls, bits, res, weeks, wk, record, ope
     inj, oinj = bits["inj"].get(t, []), bits["inj"].get(o, [])
 
     def qb_line(team, lst):
-        q = bits["qb"].get(team)
+        """(display text, regular QB's status, regular QB, starter)"""
+        lead = bits["qb"].get(team)
+        start = (bits.get("start", {}).get(team) or (None, None))[0]
+        st = next((x["status"] for x in lst if lead and x["name"] == lead), "")
+        if start and lead and start != lead and st in BAD:
+            word = "on IR" if st == "IR" else st.lower()
+            return f"{start} ({lead.split()[-1]} {word})", st, lead, start
+        q = start or lead
         if not q:
-            return None, None
-        st = next((x["status"] for x in lst if x["name"] == q), "")
-        if st in ("Out", "IR", "Doubtful", "Questionable"):
-            return f"{q} ({st})", st
-        return q, None
-    qb, qst = qb_line(t, inj)
-    oqb, oqst = qb_line(o, oinj)
+            return None, None, None, None
+        sst = next((x["status"] for x in lst if x["name"] == q), "")
+        return (f"{q} ({sst})" if sst in BAD + ("Questionable",) else q), sst, lead, start
+    qb, qst, qlead, qstart = qb_line(t, inj)
+    oqb, oqst, oqlead, oqstart = qb_line(o, oinj)
 
     key_pos = {"WR", "RB", "TE", "OT", "T", "LT", "RT", "C", "G", "DE", "EDGE", "DT", "LB", "CB", "S", "OLB"}
 
@@ -710,14 +786,19 @@ def build_team(t, o, home, g, p, spreads, mls, bits, res, weeks, wk, record, ope
 
     # Notes (+ good for picking this team, - bad, i info)
     notes = []
-    if oqst in ("Out", "IR", "Doubtful"):
-        notes.append(["plus", f"{oname} QB {bits['qb'].get(o)} is {oqst.lower() if oqst != 'IR' else 'on IR'}."])
+    def qb_note(nm, st, lead, start):
+        word = "on IR" if st == "IR" else (st or "").lower()
+        if st in BAD:
+            return f"{nm} QB {lead} is {word}." + (f" {start} is expected to start." if start and start != lead else "")
+        return f"{nm} QB {start or lead} is questionable."
+    if oqst in BAD:
+        notes.append(["plus", qb_note(oname, oqst, oqlead, oqstart)])
     elif oqst == "Questionable":
-        notes.append(["info", f"{oname} QB {bits['qb'].get(o)} is questionable."])
-    if qst in ("Out", "IR", "Doubtful"):
-        notes.append(["minus", f"{name} QB {bits['qb'].get(t)} is {qst.lower() if qst != 'IR' else 'on IR'}."])
+        notes.append(["info", qb_note(oname, oqst, oqlead, oqstart)])
+    if qst in BAD:
+        notes.append(["minus", qb_note(name, qst, qlead, qstart)])
     elif qst == "Questionable":
-        notes.append(["minus", f"{name} QB {bits['qb'].get(t)} is questionable."])
+        notes.append(["minus", qb_note(name, qst, qlead, qstart)])
     if ow == 0 and ol >= 2:
         notes.append(["plus", f"{oname} are winless ({orec})."])
     om, tm = missing(oinj), missing(inj)
