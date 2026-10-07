@@ -2,7 +2,7 @@
  "v": 1,
  "season": 2026,
  "week": 5,
- "updated": "2026-10-07T12:09:13+00:00",
+ "updated": "2026-10-07T12:28:49+00:00",
  "source": "The Odds API (9 books)",
  "byes": [
   "CAR",
@@ -21,7 +21,7 @@
    "prob": 78.6,
    "line": "DAL –8.5 · ML –455",
    "qb": "Dak Prescott",
-   "oqb": "Baker Mayfield (Out)",
+   "oqb": "Jalon Daniels (Mayfield out)",
    "move": "Steady since Wed (78.6%).",
    "rest": "Short week (4 days rest).",
    "form": "W 34-30 at HOU · L 31-34 vs BAL · W 37-20 vs WAS (+10 season)",
@@ -29,7 +29,7 @@
    "notes": [
     [
      "plus",
-     "Buccaneers QB Baker Mayfield is out."
+     "Buccaneers QB Baker Mayfield is out. Jalon Daniels is expected to start."
     ],
     [
      "plus",
@@ -64,7 +64,7 @@
    "orec": "2-2",
    "prob": 21.4,
    "line": "TB +8.5 · ML +340",
-   "qb": "Baker Mayfield (Out)",
+   "qb": "Jalon Daniels (Mayfield out)",
    "oqb": "Dak Prescott",
    "move": "Steady since Wed (21.4%).",
    "rest": "Short week (4 days rest).",
@@ -73,7 +73,7 @@
    "notes": [
     [
      "minus",
-     "Buccaneers QB Baker Mayfield is out."
+     "Buccaneers QB Baker Mayfield is out. Jalon Daniels is expected to start."
     ],
     [
      "plus",
@@ -158,22 +158,22 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "2-2",
    "orec": "3-1",
-   "prob": 41.5,
+   "prob": 41.2,
    "line": "GB +3 · ML +132",
    "qb": "Jordan Love",
-   "oqb": "Caleb Williams (Out)",
-   "move": "Steady since Wed (41.5%).",
+   "oqb": "Tyson Bagent (Williams out)",
+   "move": "Steady since Wed (41.2%).",
    "rest": "Normal week for both teams.",
    "form": "W 17-14 at TB · L 14-35 vs ATL · W 20-17 at NYJ (-32 season)",
    "wx": "73°F, wind 16 mph, 1% chance of rain. Could affect the game.",
    "notes": [
     [
      "plus",
-     "Bears QB Caleb Williams is out."
+     "Bears QB Caleb Williams is out. Tyson Bagent is expected to start."
     ],
     [
      "plus",
-     "Bears missing: Anthony Johnson Jr. (S), Kyler Gordon (CB), Shemar Turner (DT), Noah Sewell (LB)."
+     "Bears missing: Kyler Gordon (CB), Shemar Turner (DT), Noah Sewell (LB)."
     ],
     [
      "minus",
@@ -198,18 +198,18 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "3-1",
    "orec": "2-2",
-   "prob": 58.5,
+   "prob": 58.8,
    "line": "CHI –3 · ML –156",
-   "qb": "Caleb Williams (Out)",
+   "qb": "Tyson Bagent (Williams out)",
    "oqb": "Jordan Love",
-   "move": "Steady since Wed (58.5%).",
+   "move": "Steady since Wed (58.8%).",
    "rest": "Normal week for both teams.",
    "form": "W 23-12 vs NYJ · W 27-7 vs PHI · L 3-9 vs MIN (+47 season)",
    "wx": "73°F, wind 16 mph, 1% chance of rain. Could affect the game.",
    "notes": [
     [
      "minus",
-     "Bears QB Caleb Williams is out."
+     "Bears QB Caleb Williams is out. Tyson Bagent is expected to start."
     ],
     [
      "plus",
@@ -217,7 +217,7 @@
     ],
     [
      "minus",
-     "Bears missing: Anthony Johnson Jr. (S), Kyler Gordon (CB), Shemar Turner (DT), Noah Sewell (LB)."
+     "Bears missing: Kyler Gordon (CB), Shemar Turner (DT), Noah Sewell (LB)."
     ],
     [
      "minus",
@@ -506,11 +506,11 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "2-2",
    "orec": "2-2",
-   "prob": 56.7,
+   "prob": 56.8,
    "line": "PIT –2.5 · ML –148",
    "qb": "Aaron Rodgers",
    "oqb": "Daniel Jones",
-   "move": "Steady since Wed (56.7%).",
+   "move": "Steady since Wed (56.8%).",
    "rest": "Extra rest (9 days).",
    "form": "L 24-27 at CLE · W 30-27 vs CIN · L 3-20 at NE (-10 season)",
    "wx": "60°F, wind 8 mph (gusts 17), 54% chance of rain.",
@@ -538,11 +538,11 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "2-2",
    "orec": "2-2",
-   "prob": 43.3,
-   "line": "IND +2.5 · ML +125",
+   "prob": 43.2,
+   "line": "IND +2.5 · ML +124",
    "qb": "Daniel Jones",
    "oqb": "Aaron Rodgers",
-   "move": "Steady since Wed (43.3%).",
+   "move": "Steady since Wed (43.2%).",
    "rest": "Normal week for both teams.",
    "form": "W 30-13 vs WAS · W 19-17 vs HOU · L 30-33 at KC (-2 season)",
    "wx": "60°F, wind 8 mph (gusts 17), 54% chance of rain.",
@@ -570,18 +570,18 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "1-3",
    "orec": "3-1",
-   "prob": 62.9,
+   "prob": 63.0,
    "line": "WAS –3.5 · ML –190",
-   "qb": "Marcus Mariota (Doubtful)",
+   "qb": "Jayden Daniels (Mariota doubtful)",
    "oqb": "Jameis Winston",
-   "move": "Steady since Wed (62.9%).",
+   "move": "Steady since Wed (63%).",
    "rest": "Normal week for both teams.",
    "form": "L 13-30 vs IND · W 33-31 vs SEA · L 20-37 at DAL (-34 season)",
    "wx": "63°F, wind 7 mph (gusts 25), 50% chance of rain.",
    "notes": [
     [
      "minus",
-     "Commanders QB Marcus Mariota is doubtful."
+     "Commanders QB Marcus Mariota is doubtful. Jayden Daniels is expected to start."
     ],
     [
      "plus",
@@ -602,18 +602,18 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "3-1",
    "orec": "1-3",
-   "prob": 37.1,
+   "prob": 37.0,
    "line": "NYG +3.5 · ML +163",
    "qb": "Jameis Winston",
-   "oqb": "Marcus Mariota (Doubtful)",
-   "move": "Steady since Wed (37.1%).",
+   "oqb": "Jayden Daniels (Mariota doubtful)",
+   "move": "Steady since Wed (37%).",
    "rest": "Normal week for both teams.",
    "form": "W 36-24 vs ARI · W 12-7 vs TEN · L 6-28 at LA (+3 season)",
    "wx": "63°F, wind 7 mph (gusts 25), 50% chance of rain.",
    "notes": [
     [
      "plus",
-     "Commanders QB Marcus Mariota is doubtful."
+     "Commanders QB Marcus Mariota is doubtful. Jayden Daniels is expected to start."
     ],
     [
      "minus",
