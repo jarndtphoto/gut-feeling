@@ -2,7 +2,7 @@
  "v": 1,
  "season": 2026,
  "week": 5,
- "updated": "2026-10-07T11:56:07+00:00",
+ "updated": "2026-10-07T11:57:20+00:00",
  "source": "The Odds API (9 books)",
  "byes": [
   "CAR",
@@ -21,7 +21,7 @@
    "prob": 78.6,
    "line": "DAL –8.5 · ML –455",
    "qb": "Dak Prescott",
-   "oqb": "Baker Mayfield",
+   "oqb": "Baker Mayfield (Out)",
    "move": "Steady since Wed (78.6%).",
    "rest": "Short week (4 days rest).",
    "form": "W 34-30 at HOU · L 31-34 vs BAL · W 37-20 vs WAS (+10 season)",
@@ -29,7 +29,15 @@
    "notes": [
     [
      "plus",
+     "Buccaneers QB Baker Mayfield is out."
+    ],
+    [
+     "plus",
      "Buccaneers are winless (0-4)."
+    ],
+    [
+     "plus",
+     "Buccaneers missing: Antoine Winfield Jr. (S)."
     ],
     [
      "minus",
@@ -56,7 +64,7 @@
    "orec": "2-2",
    "prob": 21.4,
    "line": "TB +8.5 · ML +340",
-   "qb": "Baker Mayfield",
+   "qb": "Baker Mayfield (Out)",
    "oqb": "Dak Prescott",
    "move": "Steady since Wed (21.4%).",
    "rest": "Short week (4 days rest).",
@@ -64,8 +72,16 @@
    "wx": "Retractable roof, so weather is not a factor.",
    "notes": [
     [
+     "minus",
+     "Buccaneers QB Baker Mayfield is out."
+    ],
+    [
      "plus",
      "Cowboys missing: Drew Shelton (OT), DeMarvion Overshown (LB), Cobie Durant (CB)."
+    ],
+    [
+     "minus",
+     "Buccaneers missing: Antoine Winfield Jr. (S)."
     ],
     [
      "info",
@@ -157,7 +173,11 @@
     ],
     [
      "plus",
-     "Bears missing: Anthony Johnson Jr. (S)."
+     "Bears missing: Anthony Johnson Jr. (S), Kyler Gordon (CB), Shemar Turner (DT), Noah Sewell (LB)."
+    ],
+    [
+     "minus",
+     "Packers missing: Micah Parsons (DE)."
     ],
     [
      "plus",
@@ -192,8 +212,12 @@
      "Bears QB Caleb Williams is out."
     ],
     [
+     "plus",
+     "Packers missing: Micah Parsons (DE)."
+    ],
+    [
      "minus",
-     "Bears missing: Anthony Johnson Jr. (S)."
+     "Bears missing: Anthony Johnson Jr. (S), Kyler Gordon (CB), Shemar Turner (DT), Noah Sewell (LB)."
     ],
     [
      "minus",
@@ -281,7 +305,7 @@
    "notes": [
     [
      "minus",
-     "Dolphins missing: Reese Taylor (CB)."
+     "Dolphins missing: Reese Taylor (CB), Storm Duck (CB)."
     ],
     [
      "plus",
@@ -313,7 +337,7 @@
     ],
     [
      "plus",
-     "Dolphins missing: Reese Taylor (CB)."
+     "Dolphins missing: Reese Taylor (CB), Storm Duck (CB)."
     ],
     [
      "info",
@@ -437,7 +461,7 @@
    "notes": [
     [
      "minus",
-     "Jets missing: Mason Taylor (TE), Adonai Mitchell (WR)."
+     "Jets missing: Mason Taylor (TE), Adonai Mitchell (WR), Breece Hall (RB), Braiden McGregor (DE)."
     ],
     [
      "plus",
@@ -465,7 +489,7 @@
    "notes": [
     [
      "plus",
-     "Jets missing: Mason Taylor (TE), Adonai Mitchell (WR)."
+     "Jets missing: Mason Taylor (TE), Adonai Mitchell (WR), Breece Hall (RB), Braiden McGregor (DE)."
     ],
     [
      "info",
@@ -548,13 +572,17 @@
    "orec": "3-1",
    "prob": 62.9,
    "line": "WAS –3.5 · ML –190",
-   "qb": "Marcus Mariota",
+   "qb": "Marcus Mariota (Doubtful)",
    "oqb": "Jameis Winston",
    "move": "Steady since Wed (62.9%).",
    "rest": "Normal week for both teams.",
    "form": "L 13-30 vs IND · W 33-31 vs SEA · L 20-37 at DAL (-34 season)",
    "wx": "63°F, wind 7 mph (gusts 25), 50% chance of rain.",
    "notes": [
+    [
+     "minus",
+     "Commanders QB Marcus Mariota is doubtful."
+    ],
     [
      "plus",
      "Giants missing: Braxton Berrios (WR)."
@@ -577,12 +605,16 @@
    "prob": 37.1,
    "line": "NYG +3.5 · ML +163",
    "qb": "Jameis Winston",
-   "oqb": "Marcus Mariota",
+   "oqb": "Marcus Mariota (Doubtful)",
    "move": "Steady since Wed (37.1%).",
    "rest": "Normal week for both teams.",
    "form": "W 36-24 vs ARI · W 12-7 vs TEN · L 6-28 at LA (+3 season)",
    "wx": "63°F, wind 7 mph (gusts 25), 50% chance of rain.",
    "notes": [
+    [
+     "plus",
+     "Commanders QB Marcus Mariota is doubtful."
+    ],
     [
      "minus",
      "Giants missing: Braxton Berrios (WR)."
@@ -616,6 +648,10 @@
      "Broncos missing: Pat Bryant (WR), Pat Surtain II (CB)."
     ],
     [
+     "minus",
+     "Chargers missing: Rashawn Slater (OT)."
+    ],
+    [
      "plus",
      "Home game against a division rival."
     ]
@@ -642,6 +678,10 @@
     [
      "plus",
      "Chargers are winless (0-4)."
+    ],
+    [
+     "plus",
+     "Chargers missing: Rashawn Slater (OT)."
     ],
     [
      "minus",
