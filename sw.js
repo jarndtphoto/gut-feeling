@@ -2,8 +2,8 @@
 // Pages and data: try the network first so updates show up right away,
 // fall back to the saved copy when there's no signal.
 // Icons and fonts: use the saved copy, they rarely change.
-const CACHE = "gut-feeling-v5";
-const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
+const CACHE = "gut-feeling-v6";
+const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png", "splash.jpg?v=1"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));

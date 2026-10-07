@@ -23,6 +23,13 @@ html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; }
 img { max-width: 100%; }
 [hidden] { display: none !important; }
+html { background: #111613; }
+#splash { position: fixed; inset: 0; z-index: 100; background: #111613 url("splash.jpg?v=1") 40% center / cover no-repeat;
+  display: flex; align-items: flex-end; justify-content: center; transition: opacity .45s ease; cursor: pointer; }
+#splash .t { font-family: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif; font-weight: 800; font-size: 3rem; letter-spacing: .02em;
+  color: #fff; text-shadow: 0 2px 14px rgba(0,0,0,.7); margin-bottom: calc(env(safe-area-inset-bottom, 0px) + 56px); }
+#splash.hide { opacity: 0; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { #splash { transition: none; } }
 /* Layout: one narrow column, a "ticket" for this week's pick, then the 32-team board and a weekly log. */
 :root {
   --bg: #eef1ee;
@@ -144,6 +151,20 @@ section { display: grid; gap: 10px; }
 </style>
 </head>
 <body>
+<div id="splash" aria-hidden="true"><div class="t">Gut Feeling</div></div>
+<script>
+(function () {
+  var sp = document.getElementById("splash"), start = Date.now(), done = false;
+  function hide() {
+    if (done) return; done = true;
+    sp.classList.add("hide");
+    setTimeout(function () { sp.remove(); }, 500);
+  }
+  sp.addEventListener("click", hide);
+  window.addEventListener("load", function () { setTimeout(hide, Math.max(0, 1300 - (Date.now() - start))); });
+  setTimeout(hide, 3500);
+})();
+</script>
 <div class="wrap">
   <header class="top">
     <div>
