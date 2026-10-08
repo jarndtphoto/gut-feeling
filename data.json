@@ -2,8 +2,8 @@
  "v": 1,
  "season": 2026,
  "week": 5,
- "updated": "2026-10-08T12:05:45+00:00",
- "source": "The Odds API (9 books)",
+ "updated": "2026-10-08T22:56:34+00:00",
+ "source": "The Odds API (8 books) + The Odds API (9 books)",
  "byes": [
   "CAR",
   "KC"
@@ -18,11 +18,11 @@
    "kick": "2026-10-09T00:15+00:00",
    "rec": "2-2",
    "orec": "0-4",
-   "prob": 79.2,
-   "line": "DAL –8.5 · ML –470",
+   "prob": 80.0,
+   "line": "DAL –9 · ML –500",
    "qb": "Dak Prescott",
    "oqb": "Jalon Daniels (Mayfield out)",
-   "move": "Steady since Wed (79.2%).",
+   "move": "78.6% on Wed, now 80% (+1.4).",
    "rest": "Short week (4 days rest).",
    "form": "W 34-30 at HOU · L 31-34 vs BAL · W 37-20 vs WAS (+10 season)",
    "wx": "Retractable roof, so weather is not a factor.",
@@ -41,7 +41,7 @@
     ],
     [
      "minus",
-     "Cowboys missing: Drew Shelton (OT), Cobie Durant (CB), DeMarvion Overshown (LB)."
+     "Cowboys missing: Joey Porter Jr. (CB), Drew Shelton (OT), Cobie Durant (CB), DeMarvion Overshown (LB) +3 more."
     ],
     [
      "plus",
@@ -62,11 +62,11 @@
    "kick": "2026-10-09T00:15+00:00",
    "rec": "0-4",
    "orec": "2-2",
-   "prob": 20.8,
-   "line": "TB +8.5 · ML +360",
+   "prob": 20.0,
+   "line": "TB +9 · ML +380",
    "qb": "Jalon Daniels (Mayfield out)",
    "oqb": "Dak Prescott",
-   "move": "Steady since Wed (20.8%).",
+   "move": "21.4% on Wed, now 20% (-1.4).",
    "rest": "Short week (4 days rest).",
    "form": "L 14-17 vs GB · L 16-23 vs MIN · L 19-23 vs CLE (-20 season)",
    "wx": "Retractable roof, so weather is not a factor.",
@@ -77,7 +77,7 @@
     ],
     [
      "plus",
-     "Cowboys missing: Drew Shelton (OT), Cobie Durant (CB), DeMarvion Overshown (LB)."
+     "Cowboys missing: Joey Porter Jr. (CB), Drew Shelton (OT), Cobie Durant (CB), DeMarvion Overshown (LB) +3 more."
     ],
     [
      "minus",
@@ -102,14 +102,14 @@
    "kick": "2026-10-11T13:30+00:00",
    "rec": "3-1",
    "orec": "2-2",
-   "prob": 75.8,
-   "line": "JAX –7.5 · ML –370",
+   "prob": 75.9,
+   "line": "JAX –7.5 · ML –380",
    "qb": "Trevor Lawrence",
    "oqb": "Jalen Hurts",
-   "move": "Steady since Wed (75.8%).",
+   "move": "Steady since Wed (75.9%).",
    "rest": "Both teams travel to London.",
    "form": "W 22-17 at CIN · W 35-6 vs NE · L 13-20 at DEN (+51 season)",
-   "wx": "56°F, wind 8 mph (gusts 18), 6% chance of rain.",
+   "wx": "56°F, wind 6 mph, 0% chance of rain.",
    "notes": [
     [
      "info",
@@ -126,14 +126,14 @@
    "kick": "2026-10-11T13:30+00:00",
    "rec": "2-2",
    "orec": "3-1",
-   "prob": 24.2,
-   "line": "PHI +7.5 · ML +296",
+   "prob": 24.1,
+   "line": "PHI +7.5 · ML +295",
    "qb": "Jalen Hurts",
    "oqb": "Trevor Lawrence",
-   "move": "Steady since Wed (24.2%).",
+   "move": "Steady since Wed (24.1%).",
    "rest": "Both teams travel to London.",
    "form": "L 20-24 vs LA · L 7-27 at CHI · W 24-20 at TEN (-18 season)",
-   "wx": "56°F, wind 8 mph (gusts 18), 6% chance of rain.",
+   "wx": "56°F, wind 6 mph, 0% chance of rain.",
    "notes": [
     [
      "info",
@@ -150,14 +150,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "2-2",
    "orec": "3-1",
-   "prob": 46.1,
-   "line": "GB +1.5 · ML +110",
+   "prob": 47.3,
+   "line": "GB +1 · ML +102",
    "qb": "Jordan Love",
    "oqb": "Tyson Bagent (Williams out)",
-   "move": "41.5% on Wed, now 46.1% (+4.6).",
+   "move": "41.5% on Wed, now 47.3% (+5.8).",
    "rest": "Normal week for both teams.",
    "form": "W 17-14 at TB · L 14-35 vs ATL · W 20-17 at NYJ (-32 season)",
-   "wx": "75°F, wind 12 mph, 1% chance of rain.",
+   "wx": "75°F, wind 13 mph, 0% chance of rain.",
    "notes": [
     [
      "plus",
@@ -165,7 +165,7 @@
     ],
     [
      "plus",
-     "Bears missing: Kyler Gordon (CB)."
+     "Bears missing: Anthony Johnson Jr. (S), Kyler Gordon (CB)."
     ],
     [
      "minus",
@@ -190,14 +190,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "3-1",
    "orec": "2-2",
-   "prob": 53.9,
-   "line": "CHI –1.5 · ML –130",
+   "prob": 52.7,
+   "line": "CHI –1 · ML –122",
    "qb": "Tyson Bagent (Williams out)",
    "oqb": "Jordan Love",
-   "move": "58.5% on Wed, now 53.9% (-4.6).",
+   "move": "58.5% on Wed, now 52.7% (-5.8).",
    "rest": "Normal week for both teams.",
    "form": "W 23-12 vs NYJ · W 27-7 vs PHI · L 3-9 vs MIN (+47 season)",
-   "wx": "75°F, wind 12 mph, 1% chance of rain.",
+   "wx": "75°F, wind 13 mph, 0% chance of rain.",
    "notes": [
     [
      "minus",
@@ -209,7 +209,7 @@
     ],
     [
      "minus",
-     "Bears missing: Kyler Gordon (CB)."
+     "Bears missing: Anthony Johnson Jr. (S), Kyler Gordon (CB)."
     ],
     [
      "minus",
@@ -230,14 +230,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "0-4",
    "orec": "0-4",
-   "prob": 23.7,
-   "line": "TEN +7.5 · ML +306",
+   "prob": 23.8,
+   "line": "TEN +7.5 · ML +308",
    "qb": "Cam Ward",
    "oqb": "C.J. Stroud",
-   "move": "24.7% on Wed, now 23.7% (-1.0).",
+   "move": "Steady since Wed (23.8%).",
    "rest": "Normal week for both teams.",
    "form": "L 18-24 at BAL · L 7-12 at NYG · L 20-24 vs PHI (-28 season)",
-   "wx": "63°F, wind 8 mph (gusts 17), 38% chance of rain.",
+   "wx": "64°F, wind 6 mph (gusts 15), 32% chance of rain.",
    "notes": [
     [
      "plus",
@@ -258,14 +258,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "0-4",
    "orec": "0-4",
-   "prob": 76.3,
+   "prob": 76.2,
    "line": "HOU –7.5 · ML –385",
    "qb": "C.J. Stroud",
    "oqb": "Cam Ward",
-   "move": "75.3% on Wed, now 76.3% (+1.0).",
+   "move": "Steady since Wed (76.2%).",
    "rest": "Normal week for both teams.",
    "form": "L 30-34 vs DAL · L 17-19 at IND · L 6-20 vs CIN (-25 season)",
-   "wx": "63°F, wind 8 mph (gusts 17), 38% chance of rain.",
+   "wx": "64°F, wind 6 mph (gusts 15), 32% chance of rain.",
    "notes": [
     [
      "plus",
@@ -286,11 +286,11 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "0-4",
    "orec": "2-2",
-   "prob": 27.2,
-   "line": "MIA +7 · ML +250",
+   "prob": 27.0,
+   "line": "MIA +6.5 · ML +260",
    "qb": "Malik Willis",
    "oqb": "Joe Burrow",
-   "move": "25.2% on Wed, now 27.2% (+2.0).",
+   "move": "25.2% on Wed, now 27% (+1.8).",
    "rest": "Normal week for both teams.",
    "form": "L 10-15 at MIN · L 10-24 vs KC · L 13-35 at SF (-55 season)",
    "wx": "91°F, wind 12 mph, 6% chance of rain.",
@@ -314,11 +314,11 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "2-2",
    "orec": "0-4",
-   "prob": 72.8,
-   "line": "CIN –7 · ML –320",
+   "prob": 73.0,
+   "line": "CIN –6.5 · ML –320",
    "qb": "Joe Burrow",
    "oqb": "Malik Willis",
-   "move": "74.8% on Wed, now 72.8% (-2.0).",
+   "move": "74.8% on Wed, now 73% (-1.8).",
    "rest": "Normal week for both teams.",
    "form": "L 17-22 vs JAX · L 27-30 at PIT · W 20-6 at HOU (+12 season)",
    "wx": "91°F, wind 12 mph, 6% chance of rain.",
@@ -346,14 +346,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "2-2",
    "orec": "3-1",
-   "prob": 63.2,
-   "line": "NE –3.5 · ML –195",
+   "prob": 63.3,
+   "line": "NE –3.5 · ML –198",
    "qb": "Drake Maye",
    "oqb": "Kirk Cousins",
-   "move": "Steady since Wed (63.2%).",
+   "move": "Steady since Wed (63.3%).",
    "rest": "Normal week for both teams.",
    "form": "W 29-26 at BUF · L 6-35 at JAX · W 20-3 vs PIT (-12 season)",
-   "wx": "66°F, wind 9 mph, 0% chance of rain.",
+   "wx": "62°F, wind 8 mph, 1% chance of rain.",
    "notes": [
     [
      "plus",
@@ -370,14 +370,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "3-1",
    "orec": "2-2",
-   "prob": 36.8,
+   "prob": 36.7,
    "line": "LV +3.5 · ML +160",
    "qb": "Kirk Cousins",
    "oqb": "Drake Maye",
-   "move": "Steady since Wed (36.8%).",
+   "move": "Steady since Wed (36.7%).",
    "rest": "West coast team in an early East game.",
    "form": "L 27-30 vs KC · W 35-27 at NO · W 26-14 at LAC (+31 season)",
-   "wx": "66°F, wind 9 mph, 0% chance of rain.",
+   "wx": "62°F, wind 8 mph, 1% chance of rain.",
    "notes": [
     [
      "info",
@@ -394,19 +394,15 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "1-3",
    "orec": "4-0",
-   "prob": 45.1,
-   "line": "NO +2 · ML +114",
-   "qb": "Tyler Shough (Questionable)",
+   "prob": 44.2,
+   "line": "NO +2.5 · ML +120",
+   "qb": "Tyler Shough",
    "oqb": "Kyler Murray",
-   "move": "Steady since Wed (45.1%).",
+   "move": "45.2% on Wed, now 44.2% (-1.0).",
    "rest": "Normal week for both teams.",
    "form": "L 24-45 vs ATL · L 27-35 vs LV · W 24-17 at BAL (-23 season)",
    "wx": "Dome, so weather is not a factor.",
    "notes": [
-    [
-     "minus",
-     "Saints QB Tyler Shough is questionable."
-    ],
     [
      "plus",
      "Home game."
@@ -422,19 +418,15 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "4-0",
    "orec": "1-3",
-   "prob": 54.9,
-   "line": "MIN –2 · ML –135",
+   "prob": 55.8,
+   "line": "MIN –2.5 · ML –140",
    "qb": "Kyler Murray",
-   "oqb": "Tyler Shough (Questionable)",
-   "move": "Steady since Wed (54.9%).",
+   "oqb": "Tyler Shough",
+   "move": "54.8% on Wed, now 55.8% (+1.0).",
    "rest": "Normal week for both teams.",
    "form": "W 15-10 vs MIA · W 23-16 at TB · W 9-3 at CHI (+35 season)",
    "wx": "Dome, so weather is not a factor.",
    "notes": [
-    [
-     "info",
-     "Saints QB Tyler Shough is questionable."
-    ],
     [
      "info",
      "Road game."
@@ -450,14 +442,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "1-3",
    "orec": "3-1",
-   "prob": 54.4,
-   "line": "NYJ –1.5 · ML –131",
+   "prob": 55.2,
+   "line": "NYJ –2 · ML –135",
    "qb": "Geno Smith",
    "oqb": "Deshaun Watson",
-   "move": "Steady since Wed (54.4%).",
+   "move": "Steady since Wed (55.2%).",
    "rest": "Normal week for both teams.",
    "form": "L 12-23 at CHI · L 24-31 at DET · L 17-20 vs GB (-8 season)",
-   "wx": "65°F, wind 8 mph (gusts 16), 10% chance of rain.",
+   "wx": "63°F, wind 8 mph (gusts 18), 24% chance of rain.",
    "notes": [
     [
      "plus",
@@ -465,7 +457,7 @@
     ],
     [
      "minus",
-     "Jets missing: Dylan Parham (G), Breece Hall (RB), Kiko Mauigoa (LB), Adonai Mitchell (WR)."
+     "Jets missing: Adonai Mitchell (WR), Breece Hall (RB), Dylan Parham (G), Kiko Mauigoa (LB)."
     ],
     [
      "plus",
@@ -482,18 +474,18 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "3-1",
    "orec": "1-3",
-   "prob": 45.6,
-   "line": "CLE +1.5 · ML +110",
+   "prob": 44.8,
+   "line": "CLE +2 · ML +115",
    "qb": "Deshaun Watson",
    "oqb": "Geno Smith",
-   "move": "Steady since Wed (45.6%).",
+   "move": "Steady since Wed (44.8%).",
    "rest": "Extra rest (9 days).",
    "form": "W 27-24 vs PIT · W 21-18 vs CAR · W 23-19 at TB (-14 season)",
-   "wx": "65°F, wind 8 mph (gusts 16), 10% chance of rain.",
+   "wx": "63°F, wind 8 mph (gusts 18), 24% chance of rain.",
    "notes": [
     [
      "plus",
-     "Jets missing: Dylan Parham (G), Breece Hall (RB), Kiko Mauigoa (LB), Adonai Mitchell (WR)."
+     "Jets missing: Adonai Mitchell (WR), Breece Hall (RB), Dylan Parham (G), Kiko Mauigoa (LB)."
     ],
     [
      "minus",
@@ -514,14 +506,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "2-2",
    "orec": "2-2",
-   "prob": 56.7,
+   "prob": 57.0,
    "line": "PIT –2.5 · ML –148",
    "qb": "Aaron Rodgers",
    "oqb": "Daniel Jones",
-   "move": "Steady since Wed (56.7%).",
+   "move": "Steady since Wed (57%).",
    "rest": "Extra rest (9 days).",
    "form": "L 24-27 at CLE · W 30-27 vs CIN · L 3-20 at NE (-10 season)",
-   "wx": "60°F, wind 10 mph (gusts 32), 74% chance of rain. Could affect the game.",
+   "wx": "58°F, wind 9 mph (gusts 28), 78% chance of rain. Could affect the game.",
    "notes": [
     [
      "plus",
@@ -529,7 +521,7 @@
     ],
     [
      "minus",
-     "Steelers missing: Jamel Dean (CB)."
+     "Steelers missing: Michael Pittman Jr. (WR), Jamel Dean (CB)."
     ],
     [
      "plus",
@@ -550,18 +542,18 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "2-2",
    "orec": "2-2",
-   "prob": 43.3,
-   "line": "IND +2.5 · ML +120",
+   "prob": 43.0,
+   "line": "IND +2.5 · ML +124",
    "qb": "Daniel Jones",
    "oqb": "Aaron Rodgers",
-   "move": "Steady since Wed (43.3%).",
+   "move": "Steady since Wed (43%).",
    "rest": "Normal week for both teams.",
    "form": "W 30-13 vs WAS · W 19-17 vs HOU · L 30-33 at KC (-2 season)",
-   "wx": "60°F, wind 10 mph (gusts 32), 74% chance of rain. Could affect the game.",
+   "wx": "58°F, wind 9 mph (gusts 28), 78% chance of rain. Could affect the game.",
    "notes": [
     [
      "plus",
-     "Steelers missing: Jamel Dean (CB)."
+     "Steelers missing: Michael Pittman Jr. (WR), Jamel Dean (CB)."
     ],
     [
      "minus",
@@ -586,14 +578,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "1-3",
    "orec": "3-1",
-   "prob": 63.6,
-   "line": "WAS –3.5 · ML –200",
+   "prob": 64.0,
+   "line": "WAS –4 · ML –198",
    "qb": "Jayden Daniels (Mariota doubtful)",
    "oqb": "Jameis Winston",
-   "move": "Steady since Wed (63.6%).",
+   "move": "62.9% on Wed, now 64% (+1.1).",
    "rest": "Normal week for both teams.",
    "form": "L 13-30 vs IND · W 33-31 vs SEA · L 20-37 at DAL (-34 season)",
-   "wx": "62°F, wind 15 mph (gusts 29), 61% chance of rain. Could affect the game.",
+   "wx": "62°F, wind 17 mph (gusts 37), 85% chance of rain. Could affect the game.",
    "notes": [
     [
      "minus",
@@ -626,14 +618,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "3-1",
    "orec": "1-3",
-   "prob": 36.4,
-   "line": "NYG +3.5 · ML +166",
+   "prob": 36.0,
+   "line": "NYG +4 · ML +166",
    "qb": "Jameis Winston",
    "oqb": "Jayden Daniels (Mariota doubtful)",
-   "move": "Steady since Wed (36.4%).",
+   "move": "37.1% on Wed, now 36% (-1.1).",
    "rest": "Normal week for both teams.",
    "form": "W 36-24 vs ARI · W 12-7 vs TEN · L 6-28 at LA (+3 season)",
-   "wx": "62°F, wind 15 mph (gusts 29), 61% chance of rain. Could affect the game.",
+   "wx": "62°F, wind 17 mph (gusts 37), 85% chance of rain. Could affect the game.",
    "notes": [
     [
      "plus",
@@ -677,7 +669,7 @@
    "notes": [
     [
      "plus",
-     "Broncos missing: Pat Surtain II (CB), Pat Bryant (WR)."
+     "Broncos missing: Pat Bryant (WR), Pat Surtain II (CB)."
     ],
     [
      "minus",
@@ -717,7 +709,7 @@
     ],
     [
      "minus",
-     "Broncos missing: Pat Surtain II (CB), Pat Bryant (WR)."
+     "Broncos missing: Pat Bryant (WR), Pat Surtain II (CB)."
     ],
     [
      "minus",
@@ -734,11 +726,11 @@
    "kick": "2026-10-11T20:25+00:00",
    "rec": "1-3",
    "orec": "2-2",
-   "prob": 31.7,
+   "prob": 31.6,
    "line": "ARI +5.5 · ML +210",
    "qb": "Jacoby Brissett",
    "oqb": "Jared Goff",
-   "move": "Steady since Wed (31.7%).",
+   "move": "Steady since Wed (31.6%).",
    "rest": "Normal week for both teams.",
    "form": "L 24-36 at NYG · L 30-36 at SF · L 7-31 vs SEA (-30 season)",
    "wx": "Retractable roof, so weather is not a factor.",
@@ -766,11 +758,11 @@
    "kick": "2026-10-11T20:25+00:00",
    "rec": "2-2",
    "orec": "1-3",
-   "prob": 68.3,
+   "prob": 68.4,
    "line": "DET –5.5 · ML –255",
    "qb": "Jared Goff",
    "oqb": "Jacoby Brissett",
-   "move": "Steady since Wed (68.3%).",
+   "move": "Steady since Wed (68.4%).",
    "rest": "Normal week for both teams.",
    "form": "L 26-32 at CAR · W 31-24 vs NYJ · L 31-41 at BUF (-8 season)",
    "wx": "Retractable roof, so weather is not a factor.",
@@ -798,14 +790,14 @@
    "kick": "2026-10-11T20:25+00:00",
    "rec": "3-1",
    "orec": "4-0",
-   "prob": 60.0,
-   "line": "SEA –3 · ML –165",
+   "prob": 60.5,
+   "line": "SEA –3 · ML –174",
    "qb": "Sam Darnold",
    "oqb": "Brock Purdy",
-   "move": "58.9% on Wed, now 60% (+1.1).",
+   "move": "58.9% on Wed, now 60.5% (+1.6).",
    "rest": "Normal week for both teams.",
    "form": "W 30-23 vs LAC · L 31-33 at WAS · W 31-7 at ARI (+32 season)",
-   "wx": "58°F, wind 9 mph, 0% chance of rain.",
+   "wx": "58°F, wind 8 mph, 0% chance of rain.",
    "notes": [
     [
      "plus",
@@ -830,14 +822,14 @@
    "kick": "2026-10-11T20:25+00:00",
    "rec": "4-0",
    "orec": "3-1",
-   "prob": 40.0,
-   "line": "SF +3 · ML +140",
+   "prob": 39.5,
+   "line": "SF +3 · ML +146",
    "qb": "Brock Purdy",
    "oqb": "Sam Darnold",
-   "move": "41.1% on Wed, now 40% (-1.1).",
+   "move": "41.1% on Wed, now 39.5% (-1.6).",
    "rest": "Normal week for both teams.",
    "form": "W 24-14 vs DEN · W 36-30 vs ARI · W 35-13 vs MIA (+58 season)",
-   "wx": "58°F, wind 9 mph, 0% chance of rain.",
+   "wx": "58°F, wind 8 mph, 0% chance of rain.",
    "notes": [
     [
      "plus",
@@ -862,11 +854,11 @@
    "kick": "2026-10-12T00:20+00:00",
    "rec": "2-2",
    "orec": "3-1",
-   "prob": 61.2,
-   "line": "ATL –3.5 · ML –175",
+   "prob": 60.9,
+   "line": "ATL –3 · ML –172",
    "qb": "Michael Penix Jr.",
    "oqb": "Lamar Jackson (Questionable)",
-   "move": "Steady since Wed (61.2%).",
+   "move": "61.9% on Wed, now 60.9% (-1.0).",
    "rest": "Normal week for both teams.",
    "form": "W 45-24 at NO · W 35-14 at GB · L 3-34 vs CAR (+4 season)",
    "wx": "Retractable roof, so weather is not a factor.",
@@ -890,11 +882,11 @@
    "kick": "2026-10-12T00:20+00:00",
    "rec": "3-1",
    "orec": "2-2",
-   "prob": 38.8,
-   "line": "BAL +3.5 · ML +150",
+   "prob": 39.1,
+   "line": "BAL +3 · ML +146",
    "qb": "Lamar Jackson (Questionable)",
    "oqb": "Michael Penix Jr.",
-   "move": "Steady since Wed (38.8%).",
+   "move": "38.1% on Wed, now 39.1% (+1.0).",
    "rest": "Normal week for both teams.",
    "form": "W 24-18 vs TEN · W 34-31 vs DAL · L 17-24 vs NO (+20 season)",
    "wx": "Retractable roof, so weather is not a factor.",
@@ -918,11 +910,11 @@
    "kick": "2026-10-13T00:15+00:00",
    "rec": "2-2",
    "orec": "3-1",
-   "prob": 60.2,
-   "line": "LA –3 · ML –165",
+   "prob": 61.0,
+   "line": "LA –3 · ML –175",
    "qb": "Matthew Stafford",
    "oqb": "Josh Allen",
-   "move": "59.1% on Wed, now 60.2% (+1.1).",
+   "move": "59.1% on Wed, now 61% (+1.9).",
    "rest": "Normal week for both teams.",
    "form": "W 24-20 at PHI · L 26-30 at DEN · W 28-6 vs NYG (+2 season)",
    "wx": "Covered stadium, so weather is not a factor.",
@@ -942,11 +934,11 @@
    "kick": "2026-10-13T00:15+00:00",
    "rec": "3-1",
    "orec": "2-2",
-   "prob": 39.8,
-   "line": "BUF +3 · ML +145",
+   "prob": 39.0,
+   "line": "BUF +3 · ML +148",
    "qb": "Josh Allen",
    "oqb": "Matthew Stafford",
-   "move": "40.9% on Wed, now 39.8% (-1.1).",
+   "move": "40.9% on Wed, now 39% (-1.9).",
    "rest": "Normal week for both teams.",
    "form": "L 26-29 vs NE · W 24-16 vs LAC · W 41-31 vs DET (+20 season)",
    "wx": "Covered stadium, so weather is not a factor.",
