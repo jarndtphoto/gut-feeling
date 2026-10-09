@@ -2,8 +2,8 @@
  "v": 1,
  "season": 2026,
  "week": 5,
- "updated": "2026-10-08T22:56:34+00:00",
- "source": "The Odds API (8 books) + The Odds API (9 books)",
+ "updated": "2026-10-09T12:05:13+00:00",
+ "source": "ESPN odds + The Odds API (8 books) + The Odds API (9 books)",
  "byes": [
   "CAR",
   "KC"
@@ -16,32 +16,24 @@
    "neutral": false,
    "city": "",
    "kick": "2026-10-09T00:15+00:00",
-   "rec": "2-2",
-   "orec": "0-4",
+   "rec": "2-3",
+   "orec": "1-4",
    "prob": 80.0,
-   "line": "DAL –9 · ML –500",
+   "line": "DAL –8.5 · ML –500",
    "qb": "Dak Prescott",
-   "oqb": "Jalon Daniels (Mayfield out)",
+   "oqb": "Jalon Daniels",
    "move": "78.6% on Wed, now 80% (+1.4).",
    "rest": "Short week (4 days rest).",
-   "form": "W 34-30 at HOU · L 31-34 vs BAL · W 37-20 vs WAS (+10 season)",
+   "form": "L 16-24 vs TB · W 34-30 at HOU · L 31-34 vs BAL (+2 season)",
    "wx": "Retractable roof, so weather is not a factor.",
    "notes": [
     [
      "plus",
-     "Buccaneers QB Baker Mayfield is out. Jalon Daniels is expected to start."
-    ],
-    [
-     "plus",
-     "Buccaneers are winless (0-4)."
-    ],
-    [
-     "plus",
-     "Buccaneers missing: Antoine Winfield Jr. (S), SirVocea Dennis (LB), Benjamin Morrison (CB)."
+     "Buccaneers missing: Antoine Winfield Jr. (S), Billy Schrauth (G), Benjamin Morrison (CB), SirVocea Dennis (LB) +2 more."
     ],
     [
      "minus",
-     "Cowboys missing: Joey Porter Jr. (CB), Drew Shelton (OT), Cobie Durant (CB), DeMarvion Overshown (LB) +3 more."
+     "Cowboys missing: DeMarvion Overshown (LB), Cobie Durant (CB), James Houston (LB), Camden Brown (WR) +3 more."
     ],
     [
      "plus",
@@ -60,28 +52,24 @@
    "neutral": false,
    "city": "",
    "kick": "2026-10-09T00:15+00:00",
-   "rec": "0-4",
-   "orec": "2-2",
+   "rec": "1-4",
+   "orec": "2-3",
    "prob": 20.0,
-   "line": "TB +9 · ML +380",
-   "qb": "Jalon Daniels (Mayfield out)",
+   "line": "TB +8.5 · ML +380",
+   "qb": "Jalon Daniels",
    "oqb": "Dak Prescott",
    "move": "21.4% on Wed, now 20% (-1.4).",
    "rest": "Short week (4 days rest).",
-   "form": "L 14-17 vs GB · L 16-23 vs MIN · L 19-23 vs CLE (-20 season)",
+   "form": "W 24-16 at DAL · L 14-17 vs GB · L 16-23 vs MIN (-12 season)",
    "wx": "Retractable roof, so weather is not a factor.",
    "notes": [
     [
-     "minus",
-     "Buccaneers QB Baker Mayfield is out. Jalon Daniels is expected to start."
-    ],
-    [
      "plus",
-     "Cowboys missing: Joey Porter Jr. (CB), Drew Shelton (OT), Cobie Durant (CB), DeMarvion Overshown (LB) +3 more."
+     "Cowboys missing: DeMarvion Overshown (LB), Cobie Durant (CB), James Houston (LB), Camden Brown (WR) +3 more."
     ],
     [
      "minus",
-     "Buccaneers missing: Antoine Winfield Jr. (S), SirVocea Dennis (LB), Benjamin Morrison (CB)."
+     "Buccaneers missing: Antoine Winfield Jr. (S), Billy Schrauth (G), Benjamin Morrison (CB), SirVocea Dennis (LB) +2 more."
     ],
     [
      "info",
@@ -109,7 +97,7 @@
    "move": "Steady since Wed (75.9%).",
    "rest": "Both teams travel to London.",
    "form": "W 22-17 at CIN · W 35-6 vs NE · L 13-20 at DEN (+51 season)",
-   "wx": "56°F, wind 6 mph, 0% chance of rain.",
+   "wx": "56°F, wind 5 mph, 2% chance of rain.",
    "notes": [
     [
      "info",
@@ -127,13 +115,13 @@
    "rec": "2-2",
    "orec": "3-1",
    "prob": 24.1,
-   "line": "PHI +7.5 · ML +295",
+   "line": "PHI +7.5 · ML +296",
    "qb": "Jalen Hurts",
    "oqb": "Trevor Lawrence",
    "move": "Steady since Wed (24.1%).",
    "rest": "Both teams travel to London.",
    "form": "L 20-24 vs LA · L 7-27 at CHI · W 24-20 at TEN (-18 season)",
-   "wx": "56°F, wind 6 mph, 0% chance of rain.",
+   "wx": "56°F, wind 5 mph, 2% chance of rain.",
    "notes": [
     [
      "info",
@@ -150,11 +138,11 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "2-2",
    "orec": "3-1",
-   "prob": 47.3,
+   "prob": 47.5,
    "line": "GB +1 · ML +102",
    "qb": "Jordan Love",
    "oqb": "Tyson Bagent (Williams out)",
-   "move": "41.5% on Wed, now 47.3% (+5.8).",
+   "move": "41.5% on Wed, now 47.5% (+6.0).",
    "rest": "Normal week for both teams.",
    "form": "W 17-14 at TB · L 14-35 vs ATL · W 20-17 at NYJ (-32 season)",
    "wx": "75°F, wind 13 mph, 0% chance of rain.",
@@ -190,11 +178,11 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "3-1",
    "orec": "2-2",
-   "prob": 52.7,
+   "prob": 52.5,
    "line": "CHI –1 · ML –122",
    "qb": "Tyson Bagent (Williams out)",
    "oqb": "Jordan Love",
-   "move": "58.5% on Wed, now 52.7% (-5.8).",
+   "move": "58.5% on Wed, now 52.5% (-6.0).",
    "rest": "Normal week for both teams.",
    "form": "W 23-12 vs NYJ · W 27-7 vs PHI · L 3-9 vs MIN (+47 season)",
    "wx": "75°F, wind 13 mph, 0% chance of rain.",
@@ -237,7 +225,7 @@
    "move": "Steady since Wed (23.8%).",
    "rest": "Normal week for both teams.",
    "form": "L 18-24 at BAL · L 7-12 at NYG · L 20-24 vs PHI (-28 season)",
-   "wx": "64°F, wind 6 mph (gusts 15), 32% chance of rain.",
+   "wx": "64°F, wind 5 mph (gusts 14), 18% chance of rain.",
    "notes": [
     [
      "plus",
@@ -265,7 +253,7 @@
    "move": "Steady since Wed (76.2%).",
    "rest": "Normal week for both teams.",
    "form": "L 30-34 vs DAL · L 17-19 at IND · L 6-20 vs CIN (-25 season)",
-   "wx": "64°F, wind 6 mph (gusts 15), 32% chance of rain.",
+   "wx": "64°F, wind 5 mph (gusts 14), 18% chance of rain.",
    "notes": [
     [
      "plus",
@@ -286,18 +274,18 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "0-4",
    "orec": "2-2",
-   "prob": 27.0,
+   "prob": 26.9,
    "line": "MIA +6.5 · ML +260",
    "qb": "Malik Willis",
    "oqb": "Joe Burrow",
-   "move": "25.2% on Wed, now 27% (+1.8).",
+   "move": "25.2% on Wed, now 26.9% (+1.7).",
    "rest": "Normal week for both teams.",
    "form": "L 10-15 at MIN · L 10-24 vs KC · L 13-35 at SF (-55 season)",
-   "wx": "91°F, wind 12 mph, 6% chance of rain.",
+   "wx": "91°F, wind 12 mph, 4% chance of rain.",
    "notes": [
     [
      "minus",
-     "Dolphins missing: Reese Taylor (CB), Storm Duck (CB)."
+     "Dolphins missing: Storm Duck (CB), Reese Taylor (CB)."
     ],
     [
      "plus",
@@ -314,14 +302,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "2-2",
    "orec": "0-4",
-   "prob": 73.0,
+   "prob": 73.1,
    "line": "CIN –6.5 · ML –320",
    "qb": "Joe Burrow",
    "oqb": "Malik Willis",
-   "move": "74.8% on Wed, now 73% (-1.8).",
+   "move": "74.8% on Wed, now 73.1% (-1.7).",
    "rest": "Normal week for both teams.",
    "form": "L 17-22 vs JAX · L 27-30 at PIT · W 20-6 at HOU (+12 season)",
-   "wx": "91°F, wind 12 mph, 6% chance of rain.",
+   "wx": "91°F, wind 12 mph, 4% chance of rain.",
    "notes": [
     [
      "plus",
@@ -329,7 +317,7 @@
     ],
     [
      "plus",
-     "Dolphins missing: Reese Taylor (CB), Storm Duck (CB)."
+     "Dolphins missing: Storm Duck (CB), Reese Taylor (CB)."
     ],
     [
      "info",
@@ -347,13 +335,13 @@
    "rec": "2-2",
    "orec": "3-1",
    "prob": 63.3,
-   "line": "NE –3.5 · ML –198",
+   "line": "NE –3.5 · ML –195",
    "qb": "Drake Maye",
    "oqb": "Kirk Cousins",
    "move": "Steady since Wed (63.3%).",
    "rest": "Normal week for both teams.",
    "form": "W 29-26 at BUF · L 6-35 at JAX · W 20-3 vs PIT (-12 season)",
-   "wx": "62°F, wind 8 mph, 1% chance of rain.",
+   "wx": "62°F, wind 9 mph, 0% chance of rain.",
    "notes": [
     [
      "plus",
@@ -371,13 +359,13 @@
    "rec": "3-1",
    "orec": "2-2",
    "prob": 36.7,
-   "line": "LV +3.5 · ML +160",
+   "line": "LV +3.5 · ML +161",
    "qb": "Kirk Cousins",
    "oqb": "Drake Maye",
    "move": "Steady since Wed (36.7%).",
    "rest": "West coast team in an early East game.",
    "form": "L 27-30 vs KC · W 35-27 at NO · W 26-14 at LAC (+31 season)",
-   "wx": "62°F, wind 8 mph, 1% chance of rain.",
+   "wx": "62°F, wind 9 mph, 0% chance of rain.",
    "notes": [
     [
      "info",
@@ -394,11 +382,11 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "1-3",
    "orec": "4-0",
-   "prob": 44.2,
+   "prob": 44.0,
    "line": "NO +2.5 · ML +120",
    "qb": "Tyler Shough",
    "oqb": "Kyler Murray",
-   "move": "45.2% on Wed, now 44.2% (-1.0).",
+   "move": "45.2% on Wed, now 44% (-1.2).",
    "rest": "Normal week for both teams.",
    "form": "L 24-45 vs ATL · L 27-35 vs LV · W 24-17 at BAL (-23 season)",
    "wx": "Dome, so weather is not a factor.",
@@ -418,11 +406,11 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "4-0",
    "orec": "1-3",
-   "prob": 55.8,
+   "prob": 56.0,
    "line": "MIN –2.5 · ML –140",
    "qb": "Kyler Murray",
    "oqb": "Tyler Shough",
-   "move": "54.8% on Wed, now 55.8% (+1.0).",
+   "move": "54.8% on Wed, now 56% (+1.2).",
    "rest": "Normal week for both teams.",
    "form": "W 15-10 vs MIA · W 23-16 at TB · W 9-3 at CHI (+35 season)",
    "wx": "Dome, so weather is not a factor.",
@@ -449,7 +437,7 @@
    "move": "Steady since Wed (55.2%).",
    "rest": "Normal week for both teams.",
    "form": "L 12-23 at CHI · L 24-31 at DET · L 17-20 vs GB (-8 season)",
-   "wx": "63°F, wind 8 mph (gusts 18), 24% chance of rain.",
+   "wx": "62°F, wind 9 mph (gusts 22), 39% chance of rain.",
    "notes": [
     [
      "plus",
@@ -481,7 +469,7 @@
    "move": "Steady since Wed (44.8%).",
    "rest": "Extra rest (9 days).",
    "form": "W 27-24 vs PIT · W 21-18 vs CAR · W 23-19 at TB (-14 season)",
-   "wx": "63°F, wind 8 mph (gusts 18), 24% chance of rain.",
+   "wx": "62°F, wind 9 mph (gusts 22), 39% chance of rain.",
    "notes": [
     [
      "plus",
@@ -513,7 +501,7 @@
    "move": "Steady since Wed (57%).",
    "rest": "Extra rest (9 days).",
    "form": "L 24-27 at CLE · W 30-27 vs CIN · L 3-20 at NE (-10 season)",
-   "wx": "58°F, wind 9 mph (gusts 28), 78% chance of rain. Could affect the game.",
+   "wx": "59°F, wind 7 mph (gusts 22), 95% chance of rain. Could affect the game.",
    "notes": [
     [
      "plus",
@@ -549,7 +537,7 @@
    "move": "Steady since Wed (43%).",
    "rest": "Normal week for both teams.",
    "form": "W 30-13 vs WAS · W 19-17 vs HOU · L 30-33 at KC (-2 season)",
-   "wx": "58°F, wind 9 mph (gusts 28), 78% chance of rain. Could affect the game.",
+   "wx": "59°F, wind 7 mph (gusts 22), 95% chance of rain. Could affect the game.",
    "notes": [
     [
      "plus",
@@ -578,14 +566,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "1-3",
    "orec": "3-1",
-   "prob": 64.0,
+   "prob": 63.9,
    "line": "WAS –4 · ML –198",
    "qb": "Jayden Daniels (Mariota doubtful)",
    "oqb": "Jameis Winston",
-   "move": "62.9% on Wed, now 64% (+1.1).",
+   "move": "62.9% on Wed, now 63.9% (+1.0).",
    "rest": "Normal week for both teams.",
    "form": "L 13-30 vs IND · W 33-31 vs SEA · L 20-37 at DAL (-34 season)",
-   "wx": "62°F, wind 17 mph (gusts 37), 85% chance of rain. Could affect the game.",
+   "wx": "62°F, wind 11 mph (gusts 28), 96% chance of rain. Could affect the game.",
    "notes": [
     [
      "minus",
@@ -618,14 +606,14 @@
    "kick": "2026-10-11T17:00+00:00",
    "rec": "3-1",
    "orec": "1-3",
-   "prob": 36.0,
+   "prob": 36.1,
    "line": "NYG +4 · ML +166",
    "qb": "Jameis Winston",
    "oqb": "Jayden Daniels (Mariota doubtful)",
-   "move": "37.1% on Wed, now 36% (-1.1).",
+   "move": "37.1% on Wed, now 36.1% (-1.0).",
    "rest": "Normal week for both teams.",
    "form": "W 36-24 vs ARI · W 12-7 vs TEN · L 6-28 at LA (+3 season)",
-   "wx": "62°F, wind 17 mph (gusts 37), 85% chance of rain. Could affect the game.",
+   "wx": "62°F, wind 11 mph (gusts 28), 96% chance of rain. Could affect the game.",
    "notes": [
     [
      "plus",
@@ -658,18 +646,18 @@
    "kick": "2026-10-11T20:05+00:00",
    "rec": "0-4",
    "orec": "2-2",
-   "prob": 37.9,
+   "prob": 38.1,
    "line": "LAC +3.5 · ML +155",
    "qb": "Justin Herbert",
    "oqb": "Bo Nix",
-   "move": "Steady since Wed (37.9%).",
+   "move": "Steady since Wed (38.1%).",
    "rest": "Normal week for both teams.",
    "form": "L 23-30 at SEA · L 16-24 at BUF · L 14-26 vs LV (-39 season)",
    "wx": "Covered stadium, so weather is not a factor.",
    "notes": [
     [
      "plus",
-     "Broncos missing: Pat Bryant (WR), Pat Surtain II (CB)."
+     "Broncos missing: Pat Bryant (WR), Pat Surtain II (CB), Jonathon Cooper (LB)."
     ],
     [
      "minus",
@@ -690,11 +678,11 @@
    "kick": "2026-10-11T20:05+00:00",
    "rec": "2-2",
    "orec": "0-4",
-   "prob": 62.1,
+   "prob": 61.9,
    "line": "DEN –3.5 · ML –180",
    "qb": "Bo Nix",
    "oqb": "Justin Herbert",
-   "move": "Steady since Wed (62.1%).",
+   "move": "Steady since Wed (61.9%).",
    "rest": "Normal week for both teams.",
    "form": "L 14-24 at SF · W 30-26 vs LA · W 20-13 vs JAX (-20 season)",
    "wx": "Covered stadium, so weather is not a factor.",
@@ -709,7 +697,7 @@
     ],
     [
      "minus",
-     "Broncos missing: Pat Bryant (WR), Pat Surtain II (CB)."
+     "Broncos missing: Pat Bryant (WR), Pat Surtain II (CB), Jonathon Cooper (LB)."
     ],
     [
      "minus",
@@ -726,11 +714,11 @@
    "kick": "2026-10-11T20:25+00:00",
    "rec": "1-3",
    "orec": "2-2",
-   "prob": 31.6,
-   "line": "ARI +5.5 · ML +210",
+   "prob": 31.5,
+   "line": "ARI +5.5 · ML +211",
    "qb": "Jacoby Brissett",
    "oqb": "Jared Goff",
-   "move": "Steady since Wed (31.6%).",
+   "move": "Steady since Wed (31.5%).",
    "rest": "Normal week for both teams.",
    "form": "L 24-36 at NYG · L 30-36 at SF · L 7-31 vs SEA (-30 season)",
    "wx": "Retractable roof, so weather is not a factor.",
@@ -758,11 +746,11 @@
    "kick": "2026-10-11T20:25+00:00",
    "rec": "2-2",
    "orec": "1-3",
-   "prob": 68.4,
+   "prob": 68.5,
    "line": "DET –5.5 · ML –255",
    "qb": "Jared Goff",
    "oqb": "Jacoby Brissett",
-   "move": "Steady since Wed (68.4%).",
+   "move": "Steady since Wed (68.5%).",
    "rest": "Normal week for both teams.",
    "form": "L 26-32 at CAR · W 31-24 vs NYJ · L 31-41 at BUF (-8 season)",
    "wx": "Retractable roof, so weather is not a factor.",
@@ -797,7 +785,7 @@
    "move": "58.9% on Wed, now 60.5% (+1.6).",
    "rest": "Normal week for both teams.",
    "form": "W 30-23 vs LAC · L 31-33 at WAS · W 31-7 at ARI (+32 season)",
-   "wx": "58°F, wind 8 mph, 0% chance of rain.",
+   "wx": "58°F, wind 9 mph, 0% chance of rain.",
    "notes": [
     [
      "plus",
@@ -829,7 +817,7 @@
    "move": "41.1% on Wed, now 39.5% (-1.6).",
    "rest": "Normal week for both teams.",
    "form": "W 24-14 vs DEN · W 36-30 vs ARI · W 35-13 vs MIA (+58 season)",
-   "wx": "58°F, wind 8 mph, 0% chance of rain.",
+   "wx": "58°F, wind 9 mph, 0% chance of rain.",
    "notes": [
     [
      "plus",
@@ -962,13 +950,13 @@
     "wk": 7,
     "opp": "DEN",
     "home": true,
-    "p": 32
+    "p": 31
    },
    {
     "wk": 8,
     "opp": "DAL",
     "home": false,
-    "p": 38
+    "p": 43
    },
    {
     "wk": 9,
@@ -992,7 +980,7 @@
     "wk": 12,
     "opp": "WAS",
     "home": true,
-    "p": 67
+    "p": 68
    },
    {
     "wk": 13,
@@ -1004,7 +992,7 @@
     "wk": 15,
     "opp": "NYJ",
     "home": true,
-    "p": 52
+    "p": 50
    },
    {
     "wk": 16,
@@ -1016,7 +1004,7 @@
     "wk": 17,
     "opp": "LV",
     "home": true,
-    "p": 29
+    "p": 28
    },
    {
     "wk": 18,
@@ -1036,61 +1024,61 @@
     "wk": 7,
     "opp": "SF",
     "home": true,
-    "p": 32
+    "p": 33
    },
    {
     "wk": 8,
     "opp": "TB",
     "home": false,
-    "p": 60
+    "p": 56
    },
    {
     "wk": 9,
     "opp": "CIN",
     "home": true,
-    "p": 48
+    "p": 47
    },
    {
     "wk": 10,
     "opp": "KC",
     "home": true,
-    "p": 34
+    "p": 36
    },
    {
     "wk": 12,
     "opp": "MIN",
     "home": false,
-    "p": 31
+    "p": 30
    },
    {
     "wk": 13,
     "opp": "DET",
     "home": true,
-    "p": 68
+    "p": 69
    },
    {
     "wk": 14,
     "opp": "CLE",
     "home": false,
-    "p": 49
+    "p": 48
    },
    {
     "wk": 15,
     "opp": "WAS",
     "home": false,
-    "p": 72
+    "p": 75
    },
    {
     "wk": 16,
     "opp": "TB",
     "home": true,
-    "p": 71
+    "p": 67
    },
    {
     "wk": 17,
     "opp": "NO",
     "home": true,
-    "p": 70
+    "p": 72
    },
    {
     "wk": 18,
@@ -1104,37 +1092,37 @@
     "wk": 6,
     "opp": "CLE",
     "home": false,
-    "p": 43
+    "p": 38
    },
    {
     "wk": 7,
     "opp": "CIN",
     "home": true,
-    "p": 48
+    "p": 44
    },
    {
     "wk": 8,
     "opp": "BUF",
     "home": false,
-    "p": 42
+    "p": 41
    },
    {
     "wk": 9,
     "opp": "JAX",
     "home": true,
-    "p": 27
+    "p": 24
    },
    {
     "wk": 10,
     "opp": "LAC",
     "home": true,
-    "p": 74
+    "p": 73
    },
    {
     "wk": 11,
     "opp": "CAR",
     "home": false,
-    "p": 36
+    "p": 32
    },
    {
     "wk": 12,
@@ -1146,31 +1134,31 @@
     "wk": 14,
     "opp": "TB",
     "home": true,
-    "p": 66
+    "p": 58
    },
    {
     "wk": 15,
     "opp": "PIT",
     "home": false,
-    "p": 44
+    "p": 40
    },
    {
     "wk": 16,
     "opp": "CLE",
     "home": true,
-    "p": 55
+    "p": 50
    },
    {
     "wk": 17,
     "opp": "CIN",
     "home": false,
-    "p": 36
+    "p": 32
    },
    {
     "wk": 18,
     "opp": "PIT",
     "home": true,
-    "p": 56
+    "p": 52
    }
   ],
   "BUF": [
@@ -1184,19 +1172,19 @@
     "wk": 8,
     "opp": "BAL",
     "home": true,
-    "p": 58
+    "p": 59
    },
    {
     "wk": 9,
     "opp": "MIN",
     "home": false,
-    "p": 27
+    "p": 25
    },
    {
     "wk": 10,
     "opp": "NYJ",
     "home": false,
-    "p": 53
+    "p": 52
    },
    {
     "wk": 11,
@@ -1214,19 +1202,19 @@
     "wk": 13,
     "opp": "NE",
     "home": false,
-    "p": 37
+    "p": 36
    },
    {
     "wk": 14,
     "opp": "GB",
     "home": false,
-    "p": 60
+    "p": 57
    },
    {
     "wk": 15,
     "opp": "CHI",
     "home": true,
-    "p": 32
+    "p": 31
    },
    {
     "wk": 16,
@@ -1244,7 +1232,7 @@
     "wk": 18,
     "opp": "NYJ",
     "home": true,
-    "p": 65
+    "p": 64
    }
   ],
   "CAR": [
@@ -1252,61 +1240,61 @@
     "wk": 6,
     "opp": "PHI",
     "home": false,
-    "p": 66
+    "p": 68
    },
    {
     "wk": 7,
     "opp": "TB",
     "home": true,
-    "p": 73
+    "p": 69
    },
    {
     "wk": 8,
     "opp": "GB",
     "home": false,
-    "p": 67
+    "p": 66
    },
    {
     "wk": 9,
     "opp": "DEN",
     "home": true,
-    "p": 52
+    "p": 53
    },
    {
     "wk": 10,
     "opp": "NO",
     "home": false,
-    "p": 62
+    "p": 63
    },
    {
     "wk": 11,
     "opp": "BAL",
     "home": true,
-    "p": 64
+    "p": 68
    },
    {
     "wk": 12,
     "opp": "TB",
     "home": false,
-    "p": 62
+    "p": 58
    },
    {
     "wk": 13,
     "opp": "MIN",
     "home": false,
-    "p": 34
+    "p": 32
    },
    {
     "wk": 14,
     "opp": "NO",
     "home": true,
-    "p": 73
+    "p": 74
    },
    {
     "wk": 15,
     "opp": "CIN",
     "home": true,
-    "p": 57
+    "p": 56
    },
    {
     "wk": 16,
@@ -1318,7 +1306,7 @@
     "wk": 17,
     "opp": "SEA",
     "home": true,
-    "p": 59
+    "p": 62
    },
    {
     "wk": 18,
@@ -1338,19 +1326,19 @@
     "wk": 7,
     "opp": "NE",
     "home": true,
-    "p": 72
+    "p": 73
    },
    {
     "wk": 8,
     "opp": "SEA",
     "home": false,
-    "p": 65
+    "p": 67
    },
    {
     "wk": 9,
     "opp": "TB",
     "home": true,
-    "p": 85
+    "p": 82
    },
    {
     "wk": 11,
@@ -1374,19 +1362,19 @@
     "wk": 14,
     "opp": "MIA",
     "home": false,
-    "p": 74
+    "p": 75
    },
    {
     "wk": 15,
     "opp": "BUF",
     "home": false,
-    "p": 68
+    "p": 69
    },
    {
     "wk": 16,
     "opp": "GB",
     "home": true,
-    "p": 87
+    "p": 86
    },
    {
     "wk": 17,
@@ -1398,7 +1386,7 @@
     "wk": 18,
     "opp": "MIN",
     "home": false,
-    "p": 51
+    "p": 50
    }
   ],
   "CIN": [
@@ -1406,19 +1394,19 @@
     "wk": 7,
     "opp": "BAL",
     "home": false,
-    "p": 52
+    "p": 56
    },
    {
     "wk": 8,
     "opp": "TEN",
     "home": true,
-    "p": 82
+    "p": 84
    },
    {
     "wk": 9,
     "opp": "ATL",
     "home": false,
-    "p": 52
+    "p": 53
    },
    {
     "wk": 10,
@@ -1430,49 +1418,49 @@
     "wk": 11,
     "opp": "WAS",
     "home": false,
-    "p": 74
+    "p": 77
    },
    {
     "wk": 12,
     "opp": "NO",
     "home": true,
-    "p": 72
+    "p": 74
    },
    {
     "wk": 13,
     "opp": "CLE",
     "home": false,
-    "p": 51
+    "p": 50
    },
    {
     "wk": 14,
     "opp": "KC",
     "home": true,
-    "p": 36
+    "p": 38
    },
    {
     "wk": 15,
     "opp": "CAR",
     "home": false,
-    "p": 43
+    "p": 44
    },
    {
     "wk": 16,
     "opp": "IND",
     "home": false,
-    "p": 57
+    "p": 60
    },
    {
     "wk": 17,
     "opp": "BAL",
     "home": true,
-    "p": 64
+    "p": 68
    },
    {
     "wk": 18,
     "opp": "CLE",
     "home": true,
-    "p": 63
+    "p": 62
    }
   ],
   "CLE": [
@@ -1480,73 +1468,73 @@
     "wk": 6,
     "opp": "BAL",
     "home": true,
-    "p": 57
+    "p": 62
    },
    {
     "wk": 7,
     "opp": "TEN",
     "home": false,
-    "p": 68
+    "p": 71
    },
    {
     "wk": 8,
     "opp": "PIT",
     "home": false,
-    "p": 45
+    "p": 46
    },
    {
     "wk": 9,
     "opp": "NO",
     "home": false,
-    "p": 54
+    "p": 57
    },
    {
     "wk": 10,
     "opp": "HOU",
     "home": true,
-    "p": 72
+    "p": 75
    },
    {
     "wk": 12,
     "opp": "LV",
     "home": true,
-    "p": 41
+    "p": 43
    },
    {
     "wk": 13,
     "opp": "CIN",
     "home": true,
-    "p": 49
+    "p": 50
    },
    {
     "wk": 14,
     "opp": "ATL",
     "home": true,
-    "p": 51
+    "p": 52
    },
    {
     "wk": 15,
     "opp": "NYG",
     "home": false,
-    "p": 53
+    "p": 58
    },
    {
     "wk": 16,
     "opp": "BAL",
     "home": false,
-    "p": 45
+    "p": 50
    },
    {
     "wk": 17,
     "opp": "IND",
     "home": true,
-    "p": 62
+    "p": 66
    },
    {
     "wk": 18,
     "opp": "CIN",
     "home": false,
-    "p": 37
+    "p": 38
    }
   ],
   "DAL": [
@@ -1554,73 +1542,73 @@
     "wk": 6,
     "opp": "GB",
     "home": false,
-    "p": 53
+    "p": 44
    },
    {
     "wk": 7,
     "opp": "PHI",
     "home": false,
-    "p": 52
+    "p": 46
    },
    {
     "wk": 8,
     "opp": "ARI",
     "home": true,
-    "p": 62
+    "p": 57
    },
    {
     "wk": 9,
     "opp": "IND",
     "home": false,
-    "p": 44
+    "p": 38
    },
    {
     "wk": 10,
     "opp": "SF",
     "home": true,
-    "p": 23
+    "p": 19
    },
    {
     "wk": 11,
     "opp": "TEN",
     "home": true,
-    "p": 73
+    "p": 68
    },
    {
     "wk": 12,
     "opp": "PHI",
     "home": true,
-    "p": 64
+    "p": 59
    },
    {
     "wk": 13,
     "opp": "SEA",
     "home": false,
-    "p": 34
+    "p": 29
    },
    {
     "wk": 15,
     "opp": "LA",
     "home": false,
-    "p": 32
+    "p": 27
    },
    {
     "wk": 16,
     "opp": "JAX",
     "home": true,
-    "p": 23
+    "p": 18
    },
    {
     "wk": 17,
     "opp": "NYG",
     "home": true,
-    "p": 59
+    "p": 54
    },
    {
     "wk": 18,
     "opp": "WAS",
     "home": false,
-    "p": 62
+    "p": 58
    }
   ],
   "DEN": [
@@ -1628,37 +1616,37 @@
     "wk": 6,
     "opp": "SEA",
     "home": true,
-    "p": 63
+    "p": 64
    },
    {
     "wk": 7,
     "opp": "ARI",
     "home": false,
-    "p": 68
+    "p": 69
    },
    {
     "wk": 8,
     "opp": "KC",
     "home": true,
-    "p": 40
+    "p": 41
    },
    {
     "wk": 9,
     "opp": "CAR",
     "home": false,
-    "p": 48
+    "p": 47
    },
    {
     "wk": 11,
     "opp": "LV",
     "home": true,
-    "p": 52
+    "p": 53
    },
    {
     "wk": 12,
     "opp": "PIT",
     "home": false,
-    "p": 56
+    "p": 55
    },
    {
     "wk": 13,
@@ -1670,7 +1658,7 @@
     "wk": 14,
     "opp": "NYJ",
     "home": false,
-    "p": 64
+    "p": 63
    },
    {
     "wk": 15,
@@ -1688,7 +1676,7 @@
     "wk": 17,
     "opp": "NE",
     "home": false,
-    "p": 48
+    "p": 47
    },
    {
     "wk": 18,
@@ -1702,13 +1690,13 @@
     "wk": 7,
     "opp": "GB",
     "home": true,
-    "p": 64
+    "p": 62
    },
    {
     "wk": 8,
     "opp": "MIN",
     "home": true,
-    "p": 31
+    "p": 29
    },
    {
     "wk": 9,
@@ -1726,7 +1714,7 @@
     "wk": 11,
     "opp": "TB",
     "home": true,
-    "p": 60
+    "p": 54
    },
    {
     "wk": 12,
@@ -1738,25 +1726,25 @@
     "wk": 13,
     "opp": "ATL",
     "home": false,
-    "p": 32
+    "p": 31
    },
    {
     "wk": 14,
     "opp": "TEN",
     "home": true,
-    "p": 72
+    "p": 73
    },
    {
     "wk": 15,
     "opp": "MIN",
     "home": false,
-    "p": 22
+    "p": 20
    },
    {
     "wk": 16,
     "opp": "NYG",
     "home": true,
-    "p": 58
+    "p": 60
    },
    {
     "wk": 17,
@@ -1768,7 +1756,7 @@
     "wk": 18,
     "opp": "GB",
     "home": false,
-    "p": 52
+    "p": 50
    }
   ],
   "GB": [
@@ -1776,25 +1764,25 @@
     "wk": 6,
     "opp": "DAL",
     "home": true,
-    "p": 47
+    "p": 56
    },
    {
     "wk": 7,
     "opp": "DET",
     "home": false,
-    "p": 36
+    "p": 38
    },
    {
     "wk": 8,
     "opp": "CAR",
     "home": true,
-    "p": 33
+    "p": 34
    },
    {
     "wk": 9,
     "opp": "NE",
     "home": false,
-    "p": 23
+    "p": 25
    },
    {
     "wk": 10,
@@ -1806,43 +1794,43 @@
     "wk": 12,
     "opp": "LA",
     "home": false,
-    "p": 24
+    "p": 27
    },
    {
     "wk": 13,
     "opp": "NO",
     "home": false,
-    "p": 39
+    "p": 41
    },
    {
     "wk": 14,
     "opp": "BUF",
     "home": true,
-    "p": 40
+    "p": 43
    },
    {
     "wk": 15,
     "opp": "MIA",
     "home": true,
-    "p": 47
+    "p": 49
    },
    {
     "wk": 16,
     "opp": "CHI",
     "home": false,
-    "p": 13
+    "p": 14
    },
    {
     "wk": 17,
     "opp": "HOU",
     "home": true,
-    "p": 58
+    "p": 62
    },
    {
     "wk": 18,
     "opp": "DET",
     "home": true,
-    "p": 48
+    "p": 50
    }
   ],
   "HOU": [
@@ -1850,25 +1838,25 @@
     "wk": 6,
     "opp": "JAX",
     "home": false,
-    "p": 13
+    "p": 12
    },
    {
     "wk": 7,
     "opp": "NYG",
     "home": true,
-    "p": 47
+    "p": 48
    },
    {
     "wk": 9,
     "opp": "LAC",
     "home": false,
-    "p": 47
+    "p": 46
    },
    {
     "wk": 10,
     "opp": "CLE",
     "home": false,
-    "p": 28
+    "p": 25
    },
    {
     "wk": 11,
@@ -1886,19 +1874,19 @@
     "wk": 13,
     "opp": "PIT",
     "home": false,
-    "p": 28
+    "p": 26
    },
    {
     "wk": 14,
     "opp": "WAS",
     "home": false,
-    "p": 51
+    "p": 52
    },
    {
     "wk": 15,
     "opp": "JAX",
     "home": true,
-    "p": 16
+    "p": 15
    },
    {
     "wk": 16,
@@ -1910,7 +1898,7 @@
     "wk": 17,
     "opp": "GB",
     "home": false,
-    "p": 42
+    "p": 38
    },
    {
     "wk": 18,
@@ -1930,25 +1918,25 @@
     "wk": 7,
     "opp": "MIN",
     "home": false,
-    "p": 23
+    "p": 20
    },
    {
     "wk": 8,
     "opp": "JAX",
     "home": false,
-    "p": 15
+    "p": 14
    },
    {
     "wk": 9,
     "opp": "DAL",
     "home": true,
-    "p": 56
+    "p": 62
    },
    {
     "wk": 10,
     "opp": "MIA",
     "home": true,
-    "p": 57
+    "p": 55
    },
    {
     "wk": 11,
@@ -1960,13 +1948,13 @@
     "wk": 12,
     "opp": "NYG",
     "home": true,
-    "p": 59
+    "p": 60
    },
    {
     "wk": 14,
     "opp": "PHI",
     "home": false,
-    "p": 53
+    "p": 52
    },
    {
     "wk": 15,
@@ -1978,19 +1966,19 @@
     "wk": 16,
     "opp": "CIN",
     "home": true,
-    "p": 43
+    "p": 40
    },
    {
     "wk": 17,
     "opp": "CLE",
     "home": false,
-    "p": 38
+    "p": 34
    },
    {
     "wk": 18,
     "opp": "JAX",
     "home": true,
-    "p": 23
+    "p": 21
    }
   ],
   "JAX": [
@@ -1998,37 +1986,37 @@
     "wk": 6,
     "opp": "HOU",
     "home": true,
-    "p": 87
+    "p": 88
    },
    {
     "wk": 8,
     "opp": "IND",
     "home": true,
-    "p": 85
+    "p": 86
    },
    {
     "wk": 9,
     "opp": "BAL",
     "home": false,
-    "p": 73
+    "p": 76
    },
    {
     "wk": 10,
     "opp": "TEN",
     "home": false,
-    "p": 88
+    "p": 89
    },
    {
     "wk": 11,
     "opp": "NYG",
     "home": false,
-    "p": 79
+    "p": 81
    },
    {
     "wk": 12,
     "opp": "TEN",
     "home": true,
-    "p": 92
+    "p": 93
    },
    {
     "wk": 13,
@@ -2040,31 +2028,31 @@
     "wk": 14,
     "opp": "PIT",
     "home": true,
-    "p": 82
+    "p": 81
    },
    {
     "wk": 15,
     "opp": "HOU",
     "home": false,
-    "p": 84
+    "p": 85
    },
    {
     "wk": 16,
     "opp": "DAL",
     "home": false,
-    "p": 77
+    "p": 82
    },
    {
     "wk": 17,
     "opp": "WAS",
     "home": true,
-    "p": 92
+    "p": 93
    },
    {
     "wk": 18,
     "opp": "IND",
     "home": false,
-    "p": 77
+    "p": 79
    }
   ],
   "KC": [
@@ -2084,7 +2072,7 @@
     "wk": 8,
     "opp": "DEN",
     "home": false,
-    "p": 60
+    "p": 59
    },
    {
     "wk": 9,
@@ -2096,7 +2084,7 @@
     "wk": 10,
     "opp": "ATL",
     "home": false,
-    "p": 66
+    "p": 64
    },
    {
     "wk": 11,
@@ -2120,13 +2108,13 @@
     "wk": 14,
     "opp": "CIN",
     "home": false,
-    "p": 64
+    "p": 62
    },
    {
     "wk": 15,
     "opp": "NE",
     "home": true,
-    "p": 74
+    "p": 73
    },
    {
     "wk": 16,
@@ -2144,7 +2132,7 @@
     "wk": 18,
     "opp": "LV",
     "home": true,
-    "p": 68
+    "p": 67
    }
   ],
   "LA": [
@@ -2158,7 +2146,7 @@
     "wk": 7,
     "opp": "LV",
     "home": false,
-    "p": 35
+    "p": 34
    },
    {
     "wk": 8,
@@ -2170,7 +2158,7 @@
     "wk": 9,
     "opp": "WAS",
     "home": false,
-    "p": 73
+    "p": 74
    },
    {
     "wk": 10,
@@ -2182,7 +2170,7 @@
     "wk": 12,
     "opp": "GB",
     "home": true,
-    "p": 76
+    "p": 73
    },
    {
     "wk": 13,
@@ -2194,13 +2182,13 @@
     "wk": 14,
     "opp": "SF",
     "home": false,
-    "p": 23
+    "p": 22
    },
    {
     "wk": 15,
     "opp": "DAL",
     "home": true,
-    "p": 68
+    "p": 73
    },
    {
     "wk": 16,
@@ -2212,7 +2200,7 @@
     "wk": 17,
     "opp": "TB",
     "home": false,
-    "p": 61
+    "p": 54
    },
    {
     "wk": 18,
@@ -2238,31 +2226,31 @@
     "wk": 9,
     "opp": "HOU",
     "home": true,
-    "p": 53
+    "p": 54
    },
    {
     "wk": 10,
     "opp": "BAL",
     "home": false,
-    "p": 26
+    "p": 27
    },
    {
     "wk": 11,
     "opp": "NYJ",
     "home": true,
-    "p": 44
+    "p": 42
    },
    {
     "wk": 12,
     "opp": "NE",
     "home": true,
-    "p": 29
+    "p": 28
    },
    {
     "wk": 13,
     "opp": "TB",
     "home": false,
-    "p": 34
+    "p": 29
    },
    {
     "wk": 14,
@@ -2280,7 +2268,7 @@
     "wk": 16,
     "opp": "MIA",
     "home": false,
-    "p": 31
+    "p": 30
    },
    {
     "wk": 17,
@@ -2306,13 +2294,13 @@
     "wk": 7,
     "opp": "LA",
     "home": true,
-    "p": 65
+    "p": 66
    },
    {
     "wk": 8,
     "opp": "NYJ",
     "home": false,
-    "p": 67
+    "p": 66
    },
    {
     "wk": 9,
@@ -2330,13 +2318,13 @@
     "wk": 11,
     "opp": "DEN",
     "home": false,
-    "p": 48
+    "p": 47
    },
    {
     "wk": 12,
     "opp": "CLE",
     "home": false,
-    "p": 59
+    "p": 57
    },
    {
     "wk": 14,
@@ -2360,13 +2348,13 @@
     "wk": 17,
     "opp": "ARI",
     "home": false,
-    "p": 71
+    "p": 72
    },
    {
     "wk": 18,
     "opp": "KC",
     "home": false,
-    "p": 32
+    "p": 33
    }
   ],
   "MIA": [
@@ -2392,7 +2380,7 @@
     "wk": 10,
     "opp": "IND",
     "home": false,
-    "p": 43
+    "p": 45
    },
    {
     "wk": 11,
@@ -2404,7 +2392,7 @@
     "wk": 12,
     "opp": "NYJ",
     "home": true,
-    "p": 58
+    "p": 57
    },
    {
     "wk": 13,
@@ -2416,19 +2404,19 @@
     "wk": 14,
     "opp": "CHI",
     "home": true,
-    "p": 26
+    "p": 25
    },
    {
     "wk": 15,
     "opp": "GB",
     "home": false,
-    "p": 53
+    "p": 51
    },
    {
     "wk": 16,
     "opp": "LAC",
     "home": true,
-    "p": 69
+    "p": 70
    },
    {
     "wk": 17,
@@ -2448,19 +2436,19 @@
     "wk": 7,
     "opp": "IND",
     "home": true,
-    "p": 77
+    "p": 80
    },
    {
     "wk": 8,
     "opp": "DET",
     "home": false,
-    "p": 69
+    "p": 71
    },
    {
     "wk": 9,
     "opp": "BUF",
     "home": true,
-    "p": 73
+    "p": 75
    },
    {
     "wk": 10,
@@ -2472,49 +2460,49 @@
     "wk": 11,
     "opp": "SF",
     "home": false,
-    "p": 38
+    "p": 41
    },
    {
     "wk": 12,
     "opp": "ATL",
     "home": true,
-    "p": 69
+    "p": 70
    },
    {
     "wk": 13,
     "opp": "CAR",
     "home": true,
-    "p": 66
+    "p": 68
    },
    {
     "wk": 14,
     "opp": "NE",
     "home": false,
-    "p": 54
+    "p": 57
    },
    {
     "wk": 15,
     "opp": "DET",
     "home": true,
-    "p": 78
+    "p": 80
    },
    {
     "wk": 16,
     "opp": "WAS",
     "home": true,
-    "p": 88
+    "p": 90
    },
    {
     "wk": 17,
     "opp": "NYJ",
     "home": false,
-    "p": 70
+    "p": 71
    },
    {
     "wk": 18,
     "opp": "CHI",
     "home": true,
-    "p": 49
+    "p": 50
    }
   ],
   "NE": [
@@ -2528,7 +2516,7 @@
     "wk": 7,
     "opp": "CHI",
     "home": false,
-    "p": 28
+    "p": 27
    },
    {
     "wk": 8,
@@ -2540,7 +2528,7 @@
     "wk": 9,
     "opp": "GB",
     "home": true,
-    "p": 77
+    "p": 75
    },
    {
     "wk": 10,
@@ -2552,25 +2540,25 @@
     "wk": 12,
     "opp": "LAC",
     "home": false,
-    "p": 71
+    "p": 72
    },
    {
     "wk": 13,
     "opp": "BUF",
     "home": true,
-    "p": 63
+    "p": 64
    },
    {
     "wk": 14,
     "opp": "MIN",
     "home": true,
-    "p": 46
+    "p": 43
    },
    {
     "wk": 15,
     "opp": "KC",
     "home": false,
-    "p": 26
+    "p": 27
    },
    {
     "wk": 16,
@@ -2582,7 +2570,7 @@
     "wk": 17,
     "opp": "DEN",
     "home": true,
-    "p": 52
+    "p": 53
    },
    {
     "wk": 18,
@@ -2596,25 +2584,25 @@
     "wk": 6,
     "opp": "NYG",
     "home": false,
-    "p": 42
+    "p": 44
    },
    {
     "wk": 7,
     "opp": "PIT",
     "home": true,
-    "p": 40
+    "p": 39
    },
    {
     "wk": 9,
     "opp": "CLE",
     "home": true,
-    "p": 46
+    "p": 43
    },
    {
     "wk": 10,
     "opp": "CAR",
     "home": true,
-    "p": 38
+    "p": 37
    },
    {
     "wk": 11,
@@ -2626,25 +2614,25 @@
     "wk": 12,
     "opp": "CIN",
     "home": false,
-    "p": 28
+    "p": 26
    },
    {
     "wk": 13,
     "opp": "GB",
     "home": true,
-    "p": 61
+    "p": 59
    },
    {
     "wk": 14,
     "opp": "CAR",
     "home": false,
-    "p": 27
+    "p": 26
    },
    {
     "wk": 15,
     "opp": "TB",
     "home": false,
-    "p": 44
+    "p": 39
    },
    {
     "wk": 16,
@@ -2656,13 +2644,13 @@
     "wk": 17,
     "opp": "ATL",
     "home": false,
-    "p": 30
+    "p": 28
    },
    {
     "wk": 18,
     "opp": "TB",
     "home": true,
-    "p": 57
+    "p": 51
    }
   ],
   "NYG": [
@@ -2670,19 +2658,19 @@
     "wk": 6,
     "opp": "NO",
     "home": true,
-    "p": 58
+    "p": 56
    },
    {
     "wk": 7,
     "opp": "HOU",
     "home": false,
-    "p": 53
+    "p": 52
    },
    {
     "wk": 9,
     "opp": "PHI",
     "home": false,
-    "p": 50
+    "p": 49
    },
    {
     "wk": 10,
@@ -2694,49 +2682,49 @@
     "wk": 11,
     "opp": "JAX",
     "home": true,
-    "p": 21
+    "p": 19
    },
    {
     "wk": 12,
     "opp": "IND",
     "home": false,
-    "p": 41
+    "p": 40
    },
    {
     "wk": 13,
     "opp": "SF",
     "home": true,
-    "p": 21
+    "p": 20
    },
    {
     "wk": 14,
     "opp": "SEA",
     "home": false,
-    "p": 32
+    "p": 30
    },
    {
     "wk": 15,
     "opp": "CLE",
     "home": true,
-    "p": 47
+    "p": 42
    },
    {
     "wk": 16,
     "opp": "DET",
     "home": false,
-    "p": 42
+    "p": 40
    },
    {
     "wk": 17,
     "opp": "DAL",
     "home": false,
-    "p": 41
+    "p": 46
    },
    {
     "wk": 18,
     "opp": "PHI",
     "home": true,
-    "p": 62
+    "p": 61
    }
   ],
   "NYJ": [
@@ -2756,7 +2744,7 @@
     "wk": 8,
     "opp": "LV",
     "home": true,
-    "p": 33
+    "p": 34
    },
    {
     "wk": 9,
@@ -2768,31 +2756,31 @@
     "wk": 10,
     "opp": "BUF",
     "home": true,
-    "p": 47
+    "p": 48
    },
    {
     "wk": 11,
     "opp": "LAC",
     "home": false,
-    "p": 56
+    "p": 58
    },
    {
     "wk": 12,
     "opp": "MIA",
     "home": false,
-    "p": 42
+    "p": 43
    },
    {
     "wk": 14,
     "opp": "DEN",
     "home": true,
-    "p": 36
+    "p": 37
    },
    {
     "wk": 15,
     "opp": "ARI",
     "home": false,
-    "p": 48
+    "p": 50
    },
    {
     "wk": 16,
@@ -2804,13 +2792,13 @@
     "wk": 17,
     "opp": "MIN",
     "home": true,
-    "p": 30
+    "p": 29
    },
    {
     "wk": 18,
     "opp": "BUF",
     "home": false,
-    "p": 35
+    "p": 36
    }
   ],
   "PHI": [
@@ -2818,37 +2806,37 @@
     "wk": 6,
     "opp": "CAR",
     "home": true,
-    "p": 34
+    "p": 32
    },
    {
     "wk": 7,
     "opp": "DAL",
     "home": true,
-    "p": 48
+    "p": 54
    },
    {
     "wk": 8,
     "opp": "WAS",
     "home": false,
-    "p": 54
+    "p": 55
    },
    {
     "wk": 9,
     "opp": "NYG",
     "home": true,
-    "p": 50
+    "p": 51
    },
    {
     "wk": 11,
     "opp": "PIT",
     "home": true,
-    "p": 42
+    "p": 40
    },
    {
     "wk": 12,
     "opp": "DAL",
     "home": false,
-    "p": 36
+    "p": 41
    },
    {
     "wk": 13,
@@ -2860,7 +2848,7 @@
     "wk": 14,
     "opp": "IND",
     "home": true,
-    "p": 47
+    "p": 48
    },
    {
     "wk": 15,
@@ -2884,7 +2872,7 @@
     "wk": 18,
     "opp": "NYG",
     "home": false,
-    "p": 38
+    "p": 39
    }
   ],
   "PIT": [
@@ -2892,19 +2880,19 @@
     "wk": 6,
     "opp": "TB",
     "home": false,
-    "p": 54
+    "p": 50
    },
    {
     "wk": 7,
     "opp": "NO",
     "home": false,
-    "p": 60
+    "p": 61
    },
    {
     "wk": 8,
     "opp": "CLE",
     "home": true,
-    "p": 55
+    "p": 54
    },
    {
     "wk": 10,
@@ -2916,31 +2904,31 @@
     "wk": 11,
     "opp": "PHI",
     "home": false,
-    "p": 58
+    "p": 60
    },
    {
     "wk": 12,
     "opp": "DEN",
     "home": true,
-    "p": 44
+    "p": 45
    },
    {
     "wk": 13,
     "opp": "HOU",
     "home": true,
-    "p": 72
+    "p": 74
    },
    {
     "wk": 14,
     "opp": "JAX",
     "home": false,
-    "p": 18
+    "p": 19
    },
    {
     "wk": 15,
     "opp": "BAL",
     "home": true,
-    "p": 56
+    "p": 60
    },
    {
     "wk": 16,
@@ -2952,13 +2940,13 @@
     "wk": 17,
     "opp": "TEN",
     "home": false,
-    "p": 67
+    "p": 69
    },
    {
     "wk": 18,
     "opp": "BAL",
     "home": false,
-    "p": 44
+    "p": 48
    }
   ],
   "SEA": [
@@ -2966,7 +2954,7 @@
     "wk": 6,
     "opp": "DEN",
     "home": false,
-    "p": 37
+    "p": 36
    },
    {
     "wk": 7,
@@ -2978,7 +2966,7 @@
     "wk": 8,
     "opp": "CHI",
     "home": true,
-    "p": 35
+    "p": 33
    },
    {
     "wk": 9,
@@ -2996,19 +2984,19 @@
     "wk": 12,
     "opp": "SF",
     "home": false,
-    "p": 22
+    "p": 21
    },
    {
     "wk": 13,
     "opp": "DAL",
     "home": true,
-    "p": 66
+    "p": 71
    },
    {
     "wk": 14,
     "opp": "NYG",
     "home": true,
-    "p": 68
+    "p": 70
    },
    {
     "wk": 15,
@@ -3026,7 +3014,7 @@
     "wk": 17,
     "opp": "CAR",
     "home": false,
-    "p": 41
+    "p": 38
    },
    {
     "wk": 18,
@@ -3040,13 +3028,13 @@
     "wk": 6,
     "opp": "WAS",
     "home": true,
-    "p": 92
+    "p": 93
    },
    {
     "wk": 7,
     "opp": "ATL",
     "home": false,
-    "p": 68
+    "p": 67
    },
    {
     "wk": 9,
@@ -3058,31 +3046,31 @@
     "wk": 10,
     "opp": "DAL",
     "home": false,
-    "p": 77
+    "p": 81
    },
    {
     "wk": 11,
     "opp": "MIN",
     "home": true,
-    "p": 62
+    "p": 59
    },
    {
     "wk": 12,
     "opp": "SEA",
     "home": true,
-    "p": 78
+    "p": 79
    },
    {
     "wk": 13,
     "opp": "NYG",
     "home": false,
-    "p": 79
+    "p": 80
    },
    {
     "wk": 14,
     "opp": "LA",
     "home": true,
-    "p": 77
+    "p": 78
    },
    {
     "wk": 15,
@@ -3114,73 +3102,73 @@
     "wk": 6,
     "opp": "PIT",
     "home": true,
-    "p": 46
+    "p": 50
    },
    {
     "wk": 7,
     "opp": "CAR",
     "home": false,
-    "p": 27
+    "p": 31
    },
    {
     "wk": 8,
     "opp": "ATL",
     "home": true,
-    "p": 40
+    "p": 44
    },
    {
     "wk": 9,
     "opp": "CHI",
     "home": false,
-    "p": 15
+    "p": 18
    },
    {
     "wk": 11,
     "opp": "DET",
     "home": false,
-    "p": 40
+    "p": 46
    },
    {
     "wk": 12,
     "opp": "CAR",
     "home": true,
-    "p": 38
+    "p": 42
    },
    {
     "wk": 13,
     "opp": "LAC",
     "home": true,
-    "p": 66
+    "p": 71
    },
    {
     "wk": 14,
     "opp": "BAL",
     "home": false,
-    "p": 34
+    "p": 42
    },
    {
     "wk": 15,
     "opp": "NO",
     "home": true,
-    "p": 56
+    "p": 61
    },
    {
     "wk": 16,
     "opp": "ATL",
     "home": false,
-    "p": 29
+    "p": 33
    },
    {
     "wk": 17,
     "opp": "LA",
     "home": true,
-    "p": 39
+    "p": 46
    },
    {
     "wk": 18,
     "opp": "NO",
     "home": false,
-    "p": 43
+    "p": 49
    }
   ],
   "TEN": [
@@ -3194,43 +3182,43 @@
     "wk": 7,
     "opp": "CLE",
     "home": true,
-    "p": 32
+    "p": 29
    },
    {
     "wk": 8,
     "opp": "CIN",
     "home": false,
-    "p": 18
+    "p": 16
    },
    {
     "wk": 10,
     "opp": "JAX",
     "home": true,
-    "p": 12
+    "p": 11
    },
    {
     "wk": 11,
     "opp": "DAL",
     "home": false,
-    "p": 27
+    "p": 32
    },
    {
     "wk": 12,
     "opp": "JAX",
     "home": false,
-    "p": 8
+    "p": 7
    },
    {
     "wk": 13,
     "opp": "WAS",
     "home": true,
-    "p": 56
+    "p": 57
    },
    {
     "wk": 14,
     "opp": "DET",
     "home": false,
-    "p": 28
+    "p": 27
    },
    {
     "wk": 15,
@@ -3248,7 +3236,7 @@
     "wk": 17,
     "opp": "PIT",
     "home": true,
-    "p": 33
+    "p": 31
    },
    {
     "wk": 18,
@@ -3262,19 +3250,19 @@
     "wk": 6,
     "opp": "SF",
     "home": false,
-    "p": 8
+    "p": 7
    },
    {
     "wk": 8,
     "opp": "PHI",
     "home": true,
-    "p": 46
+    "p": 45
    },
    {
     "wk": 9,
     "opp": "LA",
     "home": true,
-    "p": 27
+    "p": 26
    },
    {
     "wk": 10,
@@ -3286,84 +3274,84 @@
     "wk": 11,
     "opp": "CIN",
     "home": true,
-    "p": 26
+    "p": 23
    },
    {
     "wk": 12,
     "opp": "ARI",
     "home": false,
-    "p": 33
+    "p": 32
    },
    {
     "wk": 13,
     "opp": "TEN",
     "home": false,
-    "p": 44
+    "p": 43
    },
    {
     "wk": 14,
     "opp": "HOU",
     "home": true,
-    "p": 49
+    "p": 48
    },
    {
     "wk": 15,
     "opp": "ATL",
     "home": true,
-    "p": 28
+    "p": 25
    },
    {
     "wk": 16,
     "opp": "MIN",
     "home": false,
-    "p": 12
+    "p": 10
    },
    {
     "wk": 17,
     "opp": "JAX",
     "home": false,
-    "p": 8
+    "p": 7
    },
    {
     "wk": 18,
     "opp": "DAL",
     "home": true,
-    "p": 38
+    "p": 42
    }
   ]
  },
  "sos": {
-  "SEA": "Hard",
   "LAC": "Hard",
-  "BUF": "Hard",
+  "SEA": "Hard",
   "ATL": "Hard",
+  "BUF": "Hard",
   "NYJ": "Hard",
-  "ARI": "Hard",
+  "DET": "Hard",
   "DEN": "Hard",
+  "ARI": "Hard",
   "LV": "Hard",
   "KC": "Hard",
-  "DET": "Hard",
-  "TEN": "Hard",
-  "WAS": "Medium",
-  "GB": "Medium",
+  "CHI": "Hard",
+  "BAL": "Medium",
   "NE": "Medium",
-  "CHI": "Medium",
+  "NO": "Medium",
   "MIN": "Medium",
   "TB": "Medium",
-  "BAL": "Medium",
-  "NO": "Medium",
-  "SF": "Medium",
+  "TEN": "Medium",
+  "GB": "Medium",
+  "WAS": "Medium",
   "MIA": "Medium",
-  "IND": "Medium",
-  "LA": "Easy",
-  "PIT": "Easy",
-  "CAR": "Easy",
+  "CAR": "Medium",
+  "PIT": "Medium",
+  "IND": "Easy",
+  "SF": "Easy",
   "CIN": "Easy",
+  "LA": "Easy",
   "CLE": "Easy",
   "NYG": "Easy",
-  "PHI": "Easy",
-  "DAL": "Easy",
   "HOU": "Easy",
+  "DAL": "Easy",
+  "PHI": "Easy",
   "JAX": "Easy"
  }
 }
